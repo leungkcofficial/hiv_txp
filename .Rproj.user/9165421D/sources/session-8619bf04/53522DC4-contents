@@ -1,0 +1,158 @@
+library(jsonlite)
+library(dplyr)
+library(meta)
+library(metafor)
+library(ggplot2)
+df <- fromJSON("D:/PYDataScience/HIV_TXP_SR/data/supp.json")
+
+# Select and rename columns
+pt_survival_hr_df <- df[c('sample_size_(hiv_seropositive_only)', 'study_id', 
+                          '1-year_patient_survival_(%)_hiv+',
+                          "1-year_patient_survival_(%)_hiv-", 
+                          '3-year_patient_survival_(%)_hiv+',
+                          "3-year_patient_survival_(%)_hiv-", 
+                          '>=_5-year_patient_survival_(%)_hiv+',
+                          ">=_5-year_patient_survival_(%)_hiv-")]
+
+names(pt_survival_hr_df) <- c('sample_size', 'study_id', '1_yr_pos', '1_yr_neg', '3_yr_pos', '1_yr_neg', '5_yr_pos','5_yr_neg')
+
+# Select the required columns
+selected_df <- pt_survival_hr_df %>% 
+  select(study_id, sample_size, "1_yr_pos", "1_yr_neg")
+
+# Filter out rows with missing values in either '1_yr_pos' or '1_yr_neg'
+filtered_df <- selected_df %>% 
+  filter(!is.na(selected_df$"1_yr_pos") & !is.na(selected_df$"1_yr_neg"))
+
+# View the resulting data frame
+print(filtered_df)
+
+# Assuming your data frame is named df
+
+# Convert survival probabilities from percentage to proportion
+filtered_df$"1_yr_pos_prop" = filtered_df$"1_yr_pos" / 100
+filtered_df$"1_yr_neg_prop" = filtered_df$"1_yr_neg" / 100
+
+# Convert survival probabilities to hazard rates
+filtered_df$"1_yr_pos_hazard" = -log(filtered_df$"1_yr_pos_prop")
+filtered_df$"1_yr_neg_hazard" = -log(filtered_df$"1_yr_neg_prop")
+
+epsilon <- 0.5 / min(filtered_df$sample_size)
+filtered_df$"1_yr_pos_hazard"[filtered_df$"1_yr_pos_hazard" == 0] <- epsilon
+filtered_df$"1_yr_neg_hazard"[filtered_df$"1_yr_neg_hazard" == 0] <- epsilon
+
+# Calculate hazard ratios (HR)
+filtered_df$hazard_ratio = filtered_df$"1_yr_pos_hazard" / filtered_df$"1_yr_neg_hazard"
+
+# View the updated dataframe
+print(filtered_df)
+
+# Convert hazard ratios to log scale and calculate variance
+filtered_df$log_hazard_ratio <- log(filtered_df$hazard_ratio)
+filtered_df$var_log_hazard_ratio <- 1 / filtered_df$sample_size
+
+# Conduct meta-analysis using the rma function
+meta_analysis_result <- rma(
+  yi = filtered_df$log_hazard_ratio, 
+  vi = filtered_df$var_log_hazard_ratio,  # vi is the variance
+  method = "DL"  # Random-effects model
+)
+print(meta_analysis_result)
+
+# Calculate the standard errors for the log-transformed effect sizes
+se_log <- sqrt(meta_analysis_result$vi)
+# Calculate the confidence intervals on the log scale
+z_value <- qnorm(0.975)  # For a 95% CI
+ci_lb_log <- meta_analysis_result$yi - z_value * se_log
+ci_ub_log <- meta_analysis_result$yi + z_value * se_log
+
+# Back-transform the confidence intervals to the original scale
+ci_lb_original_scale <- exp(ci_lb_log)
+ci_ub_original_scale <- exp(ci_ub_log)
+effect_size_original_scale <- exp(meta_analysis_result$yi)
+# Combine the results into a data frame
+study_results <- data.frame(
+  study_id = filtered_df$study_id,
+  sample_size = filtered_df$sample_size,
+  effect_size = effect_size_original_scale,
+  ci_lb = ci_lb_original_scale,
+  ci_ub = ci_ub_original_scale,
+  weight = weights(meta_analysis_result)
+)
+study_results$weight_percent <- sprintf("%.2f%%", study_results$weight)
+
+# Retrieve the pooled estimate from the meta-analysis result
+pooled_logit_effect_size <- meta_analysis_result$b
+
+# Retrieve the confidence interval for the pooled estimate
+pooled_ci_lb_log <- meta_analysis_result$ci.lb
+pooled_ci_ub_log <- meta_analysis_result$ci.ub
+
+# Back-transform the pooled estimate and confidence interval from logit to proportion
+pooled_effect_size <- exp(pooled_logit_effect_size)
+pooled_ci_lb <- exp(pooled_ci_lb_log)
+pooled_ci_ub <- exp(pooled_ci_ub_log)
+
+# Now create a separate data frame just for the pooled estimate
+pooled_results <- data.frame(
+  study_id = "Pooled Estimate",
+  sample_size = sum(study_results$sample_size),
+  effect_size = pooled_effect_size,
+  ci_lb = pooled_ci_lb,
+  ci_ub = pooled_ci_ub,
+  weight = sum(study_results$weight)
+)
+pooled_results$weight_percent <- sprintf("%.2f%%", sum(study_results$weight))
+# Combine the individual study results with the pooled estimate
+all_results <- rbind(study_results, pooled_results)
+# Convert the 'study_id' to a factor and specify the level order to ensure
+# the pooled estimate is at the end (the bottom when plotted)
+all_results$study_id <- factor(all_results$study_id, levels = c(as.character(study_results$study_id), "Pooled Estimate"))
+# Add a column for the formatted CI string
+all_results$ci_text <- paste0("[", round(all_results$ci_lb, 2), ", ", round(all_results$ci_ub, 2), "]")
+
+# Add I2 and p-value from meta_analysis_result to the plot as annotations
+I2 <- meta_analysis_result$I2
+tau2 <- meta_analysis_result$tau2
+p_value <- meta_analysis_result$QEp
+
+forest_plot <- ggplot(all_results, aes(y = study_id, x = effect_size, xmin = ci_lb, xmax = ci_ub)) +
+  geom_point(data = all_results %>% filter(study_id != "Pooled Estimate"), size = 2) +
+  geom_errorbarh(data = all_results %>% filter(study_id != "Pooled Estimate"), height = 0.2) +
+  geom_text(aes(label = weight_percent, x = max(study_results$ci_ub, 1) + 0.5), hjust = 0, size = 3) +
+  geom_text(aes(label = sprintf("%.2f", effect_size), x = max(study_results$ci_ub, 1) + 1.2), hjust = 0, size = 3) +
+  geom_text(aes(label = ci_text, x = max(study_results$ci_ub, 1) + 1.8), hjust = 0, size = 3) +
+  # Add annotation labels at the top of the plot
+  annotate("text", x = max(study_results$ci_ub, 1) + 0.5, y = length(all_results$study_id) + 0.5, label = "Weight", hjust = 0, vjust = 0.5, size = 3.5, fontface = "bold") +
+  annotate("text", x = max(study_results$ci_ub, 1) + 1.2, y = length(all_results$study_id) + 0.5, label = "Effect", hjust = 0, size = 3.5, fontface = "bold") +
+  annotate("text", x = max(study_results$ci_ub, 1) + 1.8, y = length(all_results$study_id) + 0.5, label = "95% CI", hjust = 0, size = 3.5, fontface = "bold") +
+  # Add tau2, I2 and p-value at the bottom right of the plot
+  annotate("text", x = max(study_results$ci_ub, 1) - 1, y = 3, label = paste0("I² = ", sprintf("%.2f%%", I2)), hjust = 1, size = 3.5, fontface = "bold") +
+  annotate("text", x = max(study_results$ci_ub, 1) - 1, y = 2, label = paste0("tau² = ", sprintf("%.2f%%", tau2)), hjust = 1, size = 3.5, fontface = "bold") +
+  annotate("text", x = max(study_results$ci_ub, 1) - 1, y = 1, label = paste0("p-value = ", sprintf("%.2g", p_value)), hjust = 1, size = 3.5, fontface = "bold") +
+  geom_point(data = all_results %>% filter(study_id == "Pooled Estimate"), size = 10, shape = 5, color = "blue") +
+  geom_vline(xintercept = pooled_effect_size, linetype = "dotted", color = "blue") +
+  scale_y_discrete(limits = rev(levels(all_results$study_id))) +  # Order y axis based on factor levels
+  # Adjust the x-axis breaks to only show 0-1 scale
+  scale_x_continuous(breaks = seq(0, max(study_results$ci_ub, 1), by = 0.5), limits = c(0, max(study_results$ci_ub, 1) + 2.5)) +
+  theme(
+    axis.text.y = element_text(size = rel(0.8)),
+    axis.title = element_text(size = rel(1.25)),
+    plot.title = element_text(hjust = 0.5),  # Center the title
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.ticks.x = element_line(color = "black"),
+    plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm")
+  ) +
+  ggtitle('title') +
+  labs(x = "Hazard Ratio", y = "Study") +
+  theme(axis.text.y = element_text(size = rel(0.8)),
+        axis.title = element_text(size = rel(1.25)))
+# Print the plot
+print(forest_plot)
+# Return the meta-analysis result and the plot
+ggsave('plot.png', forest_plot, width = 1920 / 96, height = 1350 / 96, units = "in")
+
+
