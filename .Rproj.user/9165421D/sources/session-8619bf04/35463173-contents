@@ -1,0 +1,57 @@
+library(jsonlite)
+library(dplyr)
+library(meta)
+library(metafor)
+library(ggplot2)
+
+# Function to convert logit to proportion
+logit_to_proportion <- function(logit) {
+  exp(logit) / (1 + exp(logit))
+}
+
+df <- fromJSON("D:/PYDataScience/HIV_TXP_SR/data/supp.json")
+
+ps_df_3 <- df[c('sample_size_(hiv_seropositive_only)', 'study_id', 
+                "3-year_patient_survival_(%)_hiv+", 
+                "hivan_pre-transplant",
+                "hcv_coinfection_antihcv",
+                "cd4_count_cells/mm3_pre-transplant",
+                "viral_suppression_(<=_50copies/mm3)_pre-transplant",
+                "viral_suppression_(<=_50copies/mm3)_kaposi's_sacroma",
+                "induction_atg",
+                "induction_il-2",
+                "induction_anti-cd52",
+                "induction_total")]
+
+names(ps_df_3) <- c('sample_size', 'study_id', '3_yr_ps', 'hivan', 'hcv', 'cd4', 'viral_suppress', 'kaposi','atg', 'il_2', 'cd52', 'induction_use')
+
+mod_data <- ps_df_3[, c('sample_size', '3_yr_ps', 'cd52')]
+mod_data <- na.omit(mod_data)
+names(mod_data) <- c("sample_size", "effect_measure", "cd4")
+
+# Convert effect measure to proportion if it's in percentage
+mod_data$effect_measure <- mod_data$effect_measure / 100
+
+# Apply continuity correction and logit transformation
+epsilon <- 0.5 / min(mod_data$sample_size)
+mod_data$effect_measure <- pmin(pmax(mod_data$effect_measure, epsilon), 1 - epsilon)
+mod_data$logit_effect_measure <- log(mod_data$effect_measure / (1 - mod_data$effect_measure))
+# Calculate variance
+mod_data$var_logit_effect_measure <- 1 / (mod_data$sample_size * mod_data$effect_measure) + 
+  1 / (mod_data$sample_size * (1 - mod_data$effect_measure))
+
+# Perform meta-regression, wrapped in try() to handle errors
+res <- try(rma(yi = logit_effect_measure, 
+               vi = var_logit_effect_measure, 
+               mods = ~ moderator, 
+               data = mod_data, 
+               method = "REML"))
+
+res <- rma(yi = hivan_analysis_df$logit_1_yr_ps, 
+           sei = hivan_analysis_df$se_logit, 
+           mods = ~ hivan,
+           data = hivan_analysis_df, 
+           method = "REML")
+
+ps_df_5 <- df[c('sample_size_(hiv_seropositive_only)', "study_id",
+                "3-year_patient_survival_(%)_hiv+", ">=_5-year_patient_survival_(%)_hiv+")]

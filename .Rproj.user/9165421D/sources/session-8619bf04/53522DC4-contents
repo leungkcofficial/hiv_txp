@@ -130,7 +130,9 @@ forest_plot <- ggplot(all_results, aes(y = study_id, x = effect_size, xmin = ci_
   annotate("text", x = max(study_results$ci_ub, 1) - 1, y = 3, label = paste0("I² = ", sprintf("%.2f%%", I2)), hjust = 1, size = 3.5, fontface = "bold") +
   annotate("text", x = max(study_results$ci_ub, 1) - 1, y = 2, label = paste0("tau² = ", sprintf("%.2f%%", tau2)), hjust = 1, size = 3.5, fontface = "bold") +
   annotate("text", x = max(study_results$ci_ub, 1) - 1, y = 1, label = paste0("p-value = ", sprintf("%.2g", p_value)), hjust = 1, size = 3.5, fontface = "bold") +
-  geom_point(data = all_results %>% filter(study_id == "Pooled Estimate"), size = 10, shape = 5, color = "blue") +
+  geom_pointrange(data = all_results %>% filter(study_id == "Pooled Estimate"), 
+                  aes(xmin = ci_lb, xmax = ci_ub), 
+                  size = 1.5, shape = 18, color = "blue") +
   geom_vline(xintercept = pooled_effect_size, linetype = "dotted", color = "blue") +
   scale_y_discrete(limits = rev(levels(all_results$study_id))) +  # Order y axis based on factor levels
   # Adjust the x-axis breaks to only show 0-1 scale

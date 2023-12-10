@@ -1,0 +1,204 @@
+library(jsonlite)
+library(dplyr)
+library(meta)
+library(metafor)
+library(ggplot2)
+
+# Function to convert logit to proportion
+logit_to_proportion <- function(logit) {
+  exp(logit) / (1 + exp(logit))
+}
+
+df <- fromJSON("D:/PYDataScience/HIV_TXP_SR/data/supp.json")
+
+# Select and rename columns
+hivan_df <- df[c('sample_size_(hiv_seropositive_only)', 'study_id', 
+                 "hivan_pre-transplant",
+                 "1-year_patient_survival_(%)_hiv+", 
+                 "3-year_patient_survival_(%)_hiv+", 
+                 ">=_5-year_patient_survival_(%)_hiv+",
+                 "1-year_graft_survival_(%)_hiv+", 
+                 "3-year_graft_survival_(%)_hiv+",
+                 ">=_5-year_graft_survival_(%)_hiv+",
+                 "1-year_cumulative_graft_rejection_(%)_hiv+",
+                 "3-year_cumulative_graft_rejection_(%)_hiv+",
+                 ">=_5-year_cumulative_graft_rejection_(%)_hiv+",
+                 "1-year_infection_incidence(100_pt-yr)_hiv+",
+                 "3-year_infection_incidence(100_pt-yr)_hiv+",
+                 ">=_5-year_infection_incidence(100_pt-yr)_hiv+")]
+
+names(hivan_df) <- c('sample_size', 'study_id', 'hivan', '1_yr_ps', '3_yr_ps', '5_yr_ps', '1_yr_gs', '3_yr_gs','5_yr_gs', '1_yr_rj', '3_yr_rj', '5_yr_rj', '1_yr_if', '3_yr_if', '5_yr_if')
+
+ps_df_1 <- df[c('sample_size_(hiv_seropositive_only)', 'study_id', 
+                "1-year_patient_survival_(%)_hiv+", 
+                "hivan_pre-transplant",
+                "hcv_coinfection_antihcv",
+                "cd4_count_cells/mm3_pre-transplant",
+                "viral_suppression_(<=_50copies/mm3)_pre-transplant",
+                "viral_suppression_(<=_50copies/mm3)_kaposi's_sacroma",
+                "induction_atg",
+                "induction_il-2",
+                "induction_anti-cd52",
+                "induction_total")]
+
+names(ps_df_1) <- c('sample_size', 'study_id', '1_yr_ps', 'hivan', 'hcv', 'cd4', 'viral_suppress', 'kaposi','atg', 'il_2', 'cd52', 'induction_use')
+
+
+
+hivan_analysis_df <- hivan_df[c('sample_size', 'study_id', 'hivan', '1_yr_ps')]
+
+# Remove rows with missing data
+hivan_analysis_df <- na.omit(hivan_analysis_df)
+# Separate studies based on HIVAN prevalence (>50%)
+hivan_analysis_df$hivan_major_group <- hivan_analysis_df$hivan > 0.5
+# Convert survival rates to proportions
+hivan_analysis_df$prop_1_yr_ps <- hivan_analysis_df$"1_yr_ps"/ 100
+# Calculate epsilon based on the smallest sample size
+epsilon <- 0.5 / min(hivan_analysis_df$sample_size)
+# Apply the continuity correction
+hivan_analysis_df$adjusted_1_yr_ps <- pmin(pmax(hivan_analysis_df$prop_1_yr_ps, epsilon), 1 - epsilon)
+# Calculate the logit transformation and its variance
+hivan_analysis_df$logit_1_yr_ps <- log(hivan_analysis_df$adjusted_1_yr_ps / (1 - hivan_analysis_df$adjusted_1_yr_ps))
+hivan_analysis_df$var_logit_1_yr_ps <- 1 / (hivan_analysis_df$sample_size * hivan_analysis_df$adjusted_1_yr_ps) + 
+  1 / (hivan_analysis_df$sample_size * (1 - hivan_analysis_df$adjusted_1_yr_ps))
+# Calculate the standard errors for each study
+hivan_analysis_df$se_logit <- sqrt(hivan_analysis_df$var_logit_1_yr_ps)
+# Calculate the z-value for the desired confidence level (e.g., 95% CI)
+z_value <- qnorm(0.975)  # For a 95% CI
+# Calculate the confidence intervals on the logit scale
+hivan_analysis_df$ci_lb_logit <- hivan_analysis_df$logit_1_yr_ps - z_value * hivan_analysis_df$se_logit
+hivan_analysis_df$ci_ub_logit <- hivan_analysis_df$logit_1_yr_ps + z_value * hivan_analysis_df$se_logit
+hivan_analysis_df$ci_lb_proportion <- logit_to_proportion(hivan_analysis_df$ci_lb_logit)
+hivan_analysis_df$ci_ub_proportion <- logit_to_proportion(hivan_analysis_df$ci_ub_logit)
+
+res <- rma(yi = hivan_analysis_df$logit_1_yr_ps, 
+           sei = hivan_analysis_df$se_logit, 
+           mods = ~ hivan,
+           data = hivan_analysis_df, 
+           method = "REML")
+
+summary(res)# Separate DataFrame based on hivan_major_group
+hivan_major_true_df <- hivan_analysis_df %>% filter(hivan_major_group == TRUE)
+hivan_major_false_df <- hivan_analysis_df %>% filter(hivan_major_group == FALSE)
+
+# Perform meta-analysis
+res_true <- rma(yi = logit_1_yr_ps, vi = var_logit_1_yr_ps, method="DL", data = hivan_major_true_df)
+res_false <- rma(yi = logit_1_yr_ps, vi = var_logit_1_yr_ps, method="DL", data = hivan_major_false_df)
+
+# Summary of results
+summary(res_true)
+summary(res_false)
+
+study_results_true <- data.frame(
+  study_id = hivan_major_true_df$study_id,
+  sample_size = hivan_major_true_df$sample_size,
+  effect_size = hivan_major_true_df$prop_1_yr_ps,
+  ci_lb = hivan_major_true_df$ci_lb_proportion,
+  ci_ub = hivan_major_true_df$ci_ub_proportion
+)
+study_results_true$weight <- weights(res_true)
+study_results_true$weight <- (study_results_true$weight / sum(study_results_true$weight)) * 100
+study_results_true$weight_percent <- sprintf("%.2f%%", study_results_true$weight)
+
+# Retrieve the pooled estimate from the meta-analysis result
+pooled_logit_effect_size_true <- res_true$b
+pooled_ci_lb_logit_true <- res_true$ci.lb
+pooled_ci_ub_logit_true <- res_true$ci.ub
+pooled_effect_size_proportion_true <- logit_to_proportion(pooled_logit_effect_size_true)
+pooled_ci_lb_proportion_true <- logit_to_proportion(pooled_ci_lb_logit_true)
+pooled_ci_ub_proportion_true <- logit_to_proportion(pooled_ci_ub_logit_true)
+pooled_results_true <- data.frame(
+  study_id = "Pooled Estimate",
+  sample_size = sum(study_results_true$sample_size),
+  effect_size = pooled_effect_size_proportion_true,
+  ci_lb = pooled_ci_lb_proportion_true,
+  ci_ub = pooled_ci_ub_proportion_true,
+  weight = sum(study_results_true$weight)
+)
+pooled_results_true$weight_percent <- sprintf("%.2f%%", sum(study_results_true$weight))
+all_results_true <- rbind(study_results_true, pooled_results_true)
+all_results_true$study_id <- factor(all_results_true$study_id, levels = c(as.character(study_results_true$study_id), "Pooled Estimate"))
+# Add a column for the formatted CI string
+all_results_true$ci_text <- paste0("[", round(all_results_true$ci_lb, 2), ", ", round(all_results_true$ci_ub, 2), "]")
+
+study_results_false <- data.frame(
+  study_id = hivan_major_false_df$study_id,
+  sample_size = hivan_major_false_df$sample_size,
+  effect_size = hivan_major_false_df$prop_1_yr_ps,
+  ci_lb = hivan_major_false_df$ci_lb_proportion,
+  ci_ub = hivan_major_false_df$ci_ub_proportion
+)
+study_results_false$weight <- weights(res_false)
+study_results_false$weight <- (study_results_false$weight / sum(study_results_false$weight)) * 100
+study_results_false$weight_percent <- sprintf("%.2f%%", study_results_false$weight)
+# Retrieve the pooled estimate from the meta-analysis result
+pooled_logit_effect_size_false <- res_false$b
+pooled_ci_lb_logit_false <- res_false$ci.lb
+pooled_ci_ub_logit_false <- res_false$ci.ub
+pooled_effect_size_proportion_false <- logit_to_proportion(pooled_logit_effect_size_false)
+pooled_ci_lb_proportion_false <- logit_to_proportion(pooled_ci_lb_logit_false)
+pooled_ci_ub_proportion_false <- logit_to_proportion(pooled_ci_ub_logit_false)
+pooled_results_false <- data.frame(
+  study_id = "Pooled Estimate",
+  sample_size = sum(study_results_false$sample_size),
+  effect_size = pooled_effect_size_proportion_false,
+  ci_lb = pooled_ci_lb_proportion_false,
+  ci_ub = pooled_ci_ub_proportion_false,
+  weight = sum(study_results_false$weight)
+)
+pooled_results_false$weight_percent <- sprintf("%.2f%%", sum(study_results_false$weight))
+all_results_false <- rbind(study_results_false, pooled_results_false)
+all_results_false$study_id <- factor(all_results_false$study_id, levels = c(as.character(study_results_false$study_id), "Pooled Estimate"))
+# Add a column for the formatted CI string
+all_results_false$ci_text <- paste0("[", round(all_results_false$ci_lb, 2), ", ", round(all_results_false$ci_ub, 2), "]")
+
+print(all_results_true)
+print(all_results_false)
+
+# Pooled logit estimate for hivan_major_group == TRUE
+pooled_logit_true <- coef(res)[["hivan_major_groupTRUE"]]
+pooled_logit_false <- coef(res)[["hivan_major_groupFALSE"]]
+
+# 3. Convert logit estimates back to proportions
+pooled_proportion_true <- logit_to_proportion(pooled_logit_true)
+pooled_proportion_false <- logit_to_proportion(pooled_logit_false)
+
+se_logit_true <- sqrt(vcov(res)[["hivan_major_groupTRUE", "hivan_major_groupTRUE"]])
+se_logit_false <- sqrt(vcov(res)[["hivan_major_groupFALSE", "hivan_major_groupFALSE"]])
+
+# Confidence intervals for hivan_major_group == TRUE
+ci_lb_logit_true <- pooled_logit_true - z_value * se_logit_true
+ci_ub_logit_true <- pooled_logit_true + z_value * se_logit_true
+
+# Convert CI from logit to proportion
+ci_lb_proportion_true <- logit_to_proportion(ci_lb_logit_true)
+ci_ub_proportion_true <- logit_to_proportion(ci_ub_logit_true)
+
+# Confidence intervals for hivan_major_group == FALSE
+ci_lb_logit_false <- pooled_logit_false - z_value * se_logit_false
+ci_ub_logit_false <- pooled_logit_false + z_value * se_logit_false
+
+# Convert CI from logit to proportion
+ci_lb_proportion_false <- logit_to_proportion(ci_lb_logit_false)
+ci_ub_proportion_false <- logit_to_proportion(ci_ub_logit_false)
+
+# Convert logit estimates and confidence intervals to proportions
+proportion_estimates <- sapply(logit_estimates, logit_to_proportion)
+proportion_ci_lb <- sapply(logit_ci_lb, logit_to_proportion)
+proportion_ci_ub <- sapply(logit_ci_ub, logit_to_proportion)
+
+# Combine estimates and confidence intervals
+proportion_results <- data.frame(
+  Estimate = proportion_estimates,
+  CI_Lower = proportion_ci_lb,
+  CI_Upper = proportion_ci_ub
+)
+
+res <- rma(yi = logit_1_yr_ps, vi = var_logit_1_yr_ps, mods = ~ hivan_major_group - 1, 
+           method="DL", data = hivan_analysis_df)
+
+# Print the results
+print(res)
+
+forest(res)
+
