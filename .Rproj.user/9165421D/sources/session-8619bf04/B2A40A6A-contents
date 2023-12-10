@@ -36,6 +36,8 @@ var_logit <- 1 / (sample_sizes * proportions) + 1 / (sample_sizes * (1 - proport
 # Meta-analysis using the DerSimonian and Laird random effects model
 meta_analysis_result <- rma(yi = logit_effect_size, vi = var_logit, method = "DL")
 
+print(meta_analysis_result)
+
 # Calculate the standard errors for each study
 se_logit <- sqrt(var_logit)
 # Calculate the z-value for the desired confidence level (e.g., 95% CI)

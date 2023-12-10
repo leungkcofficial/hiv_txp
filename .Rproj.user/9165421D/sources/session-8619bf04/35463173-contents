@@ -40,6 +40,13 @@ mod_data$logit_effect_measure <- log(mod_data$effect_measure / (1 - mod_data$eff
 mod_data$var_logit_effect_measure <- 1 / (mod_data$sample_size * mod_data$effect_measure) + 
   1 / (mod_data$sample_size * (1 - mod_data$effect_measure))
 
+meta_analysis <- metagen(
+  TE = logit_effect_measure,         # Your effect size
+  seTE = sqrt(var_logit_effect_measure),  # Square root of variance to get standard error
+  data = mod_data,
+  sm = "OR" # Replace with the appropriate measure (OR, RR, etc.)
+)
+
 # Perform meta-regression, wrapped in try() to handle errors
 res <- try(rma(yi = logit_effect_measure, 
                vi = var_logit_effect_measure, 
