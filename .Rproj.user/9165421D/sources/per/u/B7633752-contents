@@ -1,0 +1,48 @@
+### Ishida 2016 - VL: Mean = 1.08, SD = 0.27, Total success = 50; Control: Mean = 1.27, SD = 0.53, Total success = 49
+### Ozturk 2017 - VL: Mean = 1.10, SD = 0.30, Total success = 42; Control: Mean = 1.73, SD = 0.74, Total success = 41
+### Borde 2022 - VL: Mean = 1.05, SD = 0.23, Total success = 186; Control: Mean = 1.15, SD = 0.40, Total success = 177
+### Taboada 2024 - VL: Mean = 1.12, SD = 0.39, Total success = 50; Control: Mean = 1.25, SD = 0.55, Total success = 36
+
+library(metafor)
+dat = data.frame(author = c("Ishida", "Ozturk", "Borde", "Taboada"),
+                 year = c(2016, 2017, 2022, 2024),
+                 m1i = c(1.08, 1.10, 1.05, 1.12),
+                 sd1i = c(0.27, 0.30, 0.23, 0.39),
+                 n1i = c(50, 42, 186, 50),
+                 m2i = c(1.27, 1.73, 1.15, 1.25),
+                 sd2i = c(0.53, 0.74, 0.40, 0.55),
+                 n2i = c(49, 41, 177, 36))
+
+dat <- escalc(measure="MD", m1i=m1i, sd1i=sd1i, n1i=n1i, m2i=m2i, sd2i=sd2i, n2i=n2i, data=dat,
+              slab=paste(author, year), drop00=TRUE)
+dat
+res <- rma(yi, vi, data=dat, method="DL")
+res
+pred <- predict(res, transf=exp, digits=2)
+pred
+
+### need the rounded estimate and CI bounds further below
+pred <- fmtx(c(pred$pred, pred$ci.lb, pred$ci.ub), digits=2)
+
+### total number of studies
+k <- nrow(dat)
+
+### set na.action to "na.pass" (instead of the default, which is "na.omit"),
+### so that even study 3 (with a missing log odds ratio) will be shown in the
+### forest plot
+options(na.action = "na.omit")
+
+### get the weights and format them as will be used in the forest plot
+weights <- paste0(fmtx(weights(res), digits=1), "%")
+weights[weights == "NA%"] <- ""
+
+### adjust the margins
+par(mar=c(10.8,0,0.3,0.4), mgp=c(3,0.2,0), tcl=-0.2)
+
+### forest plot with extra annotations
+sav <- forest(res, at=c(-1.5, -1, -0.5, 0, 0.5, 1, 1.5), xlim=c(-30,10),
+              xlab="", efac=c(0,4), textpos=c(-30,-4.7),lty=c(0,1,0), refline=0,
+              ilab=cbind(m1i, sd1i, n1i, m2i, sd2i, n2i, weights),
+              ilab.xpos=c(-23.6,-21.6, -19.6, -17.1,-15.1,-13.1, -10.6), ilab.pos=2,
+              cex=0.8, header=c("Study","Random, 95% CI"), mlab="")
+
