@@ -1,0 +1,29 @@
+{
+    "Pooled_Survival_Proportion": 0.7555272973462637,
+    "95%_CI": [
+        0.5449800812830071,
+        1.047417174755279
+    ],
+    "I2": 0,
+    "Q": 0.0,
+    "p_value_for_Q": NaN,
+    "tau2": 0,
+    "combined_results": [
+        {
+            "study_id": "Lorio2016",
+            "sample_size": 36,
+            "effect_size": 0.7555272973462637,
+            "ci_lb": 0.5449800812830071,
+            "ci_ub": 1.047417174755279,
+            "weight_percent": 100.0
+        },
+        {
+            "study_id": "Pooled Estimate",
+            "sample_size": 36,
+            "effect_size": 0.7555272973462637,
+            "ci_lb": 0.5449800812830071,
+            "ci_ub": 1.047417174755279,
+            "weight_percent": 100.0
+        }
+    ]
+}

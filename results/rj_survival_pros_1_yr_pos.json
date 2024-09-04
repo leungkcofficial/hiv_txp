@@ -1,0 +1,53 @@
+{
+    "Pooled_Survival_Proportion": 0.20292483075535742,
+    "95%_CI": [
+        0.10544334937679166,
+        0.35478483463629906
+    ],
+    "I2": 82.8803315209193,
+    "Q": 17.523703824439334,
+    "p_value_for_Q": 0.0005514077803210338,
+    "tau2": 0.45920631016758007,
+    "combined_results": [
+        {
+            "study_id": "Durand2021",
+            "sample_size": 75,
+            "effect_size": 0.36,
+            "ci_lb": 0.2598272025066089,
+            "ci_ub": 0.47405795969736997,
+            "weight_percent": 29.851120210945293
+        },
+        {
+            "study_id": "Matignon2019",
+            "sample_size": 61,
+            "effect_size": 0.08000000000000002,
+            "ci_lb": 0.03333096188470911,
+            "ci_ub": 0.17985581743476006,
+            "weight_percent": 22.6343129939681
+        },
+        {
+            "study_id": "Muller2015",
+            "sample_size": 27,
+            "effect_size": 0.08000000000000002,
+            "ci_lb": 0.021191565452312298,
+            "ci_ub": 0.2588486421400638,
+            "weight_percent": 16.037911860979957
+        },
+        {
+            "study_id": "Stock2010",
+            "sample_size": 150,
+            "effect_size": 0.31,
+            "ci_lb": 0.241194400912979,
+            "ci_ub": 0.38838729215405327,
+            "weight_percent": 31.47665493410665
+        },
+        {
+            "study_id": "Pooled Estimate",
+            "sample_size": 313,
+            "effect_size": 0.20292483075535742,
+            "ci_lb": 0.10544334937679166,
+            "ci_ub": 0.35478483463629906,
+            "weight_percent": 100.0
+        }
+    ]
+}

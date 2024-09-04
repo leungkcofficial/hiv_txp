@@ -1,0 +1,157 @@
+{
+    "Pooled_Survival_Proportion": 0.2691286693896898,
+    "95%_CI": [
+        0.17997492318429972,
+        0.38187950767707224
+    ],
+    "I2": 90.65215667385475,
+    "Q": 171.1624750411588,
+    "p_value_for_Q": 0.0,
+    "tau2": 0.9320871616576977,
+    "combined_results": [
+        {
+            "study_id": "Alfano2018",
+            "sample_size": 19,
+            "effect_size": 0.3289999999999999,
+            "ci_lb": 0.1584602750787206,
+            "ci_ub": 0.5607746479269351,
+            "weight_percent": 5.95506343256325
+        },
+        {
+            "study_id": "Azar2017",
+            "sample_size": 13,
+            "effect_size": 0.15380000000000002,
+            "ci_lb": 0.03871843102474161,
+            "ci_ub": 0.45059826821430726,
+            "weight_percent": 4.576329294606764
+        },
+        {
+            "study_id": "Boyle2017",
+            "sample_size": 104,
+            "effect_size": 0.6635,
+            "ci_lb": 0.5676284523860813,
+            "ci_ub": 0.7475672932471631,
+            "weight_percent": 7.147997114778011
+        },
+        {
+            "study_id": "Camargo2019a",
+            "sample_size": 13,
+            "effect_size": 0.07690000000000001,
+            "ci_lb": 0.010712804786387727,
+            "ci_ub": 0.390569628328291,
+            "weight_percent": 3.4580207128517335
+        },
+        {
+            "study_id": "Delaney1992",
+            "sample_size": 17,
+            "effect_size": 0.05879999999999999,
+            "ci_lb": 0.008213615958335904,
+            "ci_ub": 0.3203174929420316,
+            "weight_percent": 3.4939579382597015
+        },
+        {
+            "study_id": "Gasser2009",
+            "sample_size": 27,
+            "effect_size": 0.33329999999999993,
+            "ci_lb": 0.18339939772705985,
+            "ci_ub": 0.5266969542935291,
+            "weight_percent": 6.343862726249674
+        },
+        {
+            "study_id": "Gathogo2014",
+            "sample_size": 35,
+            "effect_size": 0.47000000000000003,
+            "ci_lb": 0.3134710982648844,
+            "ci_ub": 0.632661680758024,
+            "weight_percent": 6.658856463426941
+        },
+        {
+            "study_id": "Gathogo2016",
+            "sample_size": 78,
+            "effect_size": 0.35900000000000004,
+            "ci_lb": 0.26069956564764574,
+            "ci_ub": 0.4707637853974185,
+            "weight_percent": 7.056487620433385
+        },
+        {
+            "study_id": "Gathogo2017",
+            "sample_size": 40,
+            "effect_size": 0.36,
+            "ci_lb": 0.2277612497939886,
+            "ci_ub": 0.5175596614967154,
+            "weight_percent": 6.698477619092029
+        },
+        {
+            "study_id": "Locke2014",
+            "sample_size": 516,
+            "effect_size": 0.15,
+            "ci_lb": 0.121719679997716,
+            "ci_ub": 0.18347831370689113,
+            "weight_percent": 7.358272662373341
+        },
+        {
+            "study_id": "Lorio2016",
+            "sample_size": 36,
+            "effect_size": 0.17869999999999997,
+            "ci_lb": 0.08487578785625569,
+            "ci_ub": 0.33793970977621834,
+            "weight_percent": 6.216061609675381
+        },
+        {
+            "study_id": "Malat2018",
+            "sample_size": 120,
+            "effect_size": 0.5333,
+            "ci_lb": 0.44392582353804,
+            "ci_ub": 0.6205866841089587,
+            "weight_percent": 7.218952026211582
+        },
+        {
+            "study_id": "Muthukumar2013",
+            "sample_size": 11,
+            "effect_size": 0.09,
+            "ci_lb": 0.012387235960741528,
+            "ci_ub": 0.4381568514750351,
+            "weight_percent": 3.413366810349563
+        },
+        {
+            "study_id": "Qiu2006",
+            "sample_size": 38,
+            "effect_size": 0.10529999999999998,
+            "ci_lb": 0.04009588731187288,
+            "ci_ub": 0.2490303491313585,
+            "weight_percent": 5.753940431557866
+        },
+        {
+            "study_id": "Roland2008",
+            "sample_size": 18,
+            "effect_size": 0.52,
+            "ci_lb": 0.30055630219144086,
+            "ci_ub": 0.7319886384008533,
+            "weight_percent": 6.036723427285933
+        },
+        {
+            "study_id": "Touzot2010",
+            "sample_size": 27,
+            "effect_size": 0.15,
+            "ci_lb": 0.05781363515054874,
+            "ci_ub": 0.3366578771049274,
+            "weight_percent": 5.7014118480697435
+        },
+        {
+            "study_id": "Vivanco2013",
+            "sample_size": 88,
+            "effect_size": 0.182,
+            "ci_lb": 0.11462345799961793,
+            "ci_ub": 0.2766078334920322,
+            "weight_percent": 6.912218262215104
+        },
+        {
+            "study_id": "Pooled Estimate",
+            "sample_size": 1200,
+            "effect_size": 0.2691286693896898,
+            "ci_lb": 0.17997492318429972,
+            "ci_ub": 0.38187950767707224,
+            "weight_percent": 100.0
+        }
+    ]
+}

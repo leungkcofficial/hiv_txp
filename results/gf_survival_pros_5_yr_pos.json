@@ -1,0 +1,29 @@
+{
+    "Pooled_Survival_Proportion": 0.84,
+    "95%_CI": [
+        0.6523363443814894,
+        0.936263011099448
+    ],
+    "I2": 0,
+    "Q": 0.0,
+    "p_value_for_Q": NaN,
+    "tau2": 0,
+    "combined_results": [
+        {
+            "study_id": "Muller2015",
+            "sample_size": 27,
+            "effect_size": 0.84,
+            "ci_lb": 0.6523363443814894,
+            "ci_ub": 0.936263011099448,
+            "weight_percent": 100.0
+        },
+        {
+            "study_id": "Pooled Estimate",
+            "sample_size": 27,
+            "effect_size": 0.84,
+            "ci_lb": 0.6523363443814894,
+            "ci_ub": 0.936263011099448,
+            "weight_percent": 100.0
+        }
+    ]
+}

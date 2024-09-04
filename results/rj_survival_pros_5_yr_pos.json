@@ -1,0 +1,29 @@
+{
+    "Pooled_Survival_Proportion": 0.5,
+    "95%_CI": [
+        0.22450338323732008,
+        0.7754966167626799
+    ],
+    "I2": 0,
+    "Q": 0.0,
+    "p_value_for_Q": NaN,
+    "tau2": 0,
+    "combined_results": [
+        {
+            "study_id": "Stock2003",
+            "sample_size": 10,
+            "effect_size": 0.5,
+            "ci_lb": 0.22450338323732008,
+            "ci_ub": 0.7754966167626799,
+            "weight_percent": 100.0
+        },
+        {
+            "study_id": "Pooled Estimate",
+            "sample_size": 10,
+            "effect_size": 0.5,
+            "ci_lb": 0.22450338323732008,
+            "ci_ub": 0.7754966167626799,
+            "weight_percent": 100.0
+        }
+    ]
+}

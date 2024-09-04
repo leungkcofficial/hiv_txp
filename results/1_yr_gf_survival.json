@@ -7,6 +7,7 @@
     "I2": 0,
     "Q": 11.029040291902412,
     "p_value_for_Q": 0.9743320792667647,
+    "tau2": 0,
     "combined_results": [
         {
             "study_id": "Alfano2018",

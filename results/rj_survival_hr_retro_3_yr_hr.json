@@ -1,0 +1,21 @@
+{
+    "Pooled_Survival_Proportion": 1.0,
+    "95%_CI": [
+        1.0,
+        1.0
+    ],
+    "I2": Infinity,
+    "Q": 0.0,
+    "p_value_for_Q": NaN,
+    "tau2": 0,
+    "combined_results": [
+        {
+            "study_id": "Pooled Estimate",
+            "sample_size": 0.0,
+            "effect_size": 1.0,
+            "ci_lb": 1.0,
+            "ci_ub": 1.0,
+            "weight_percent": 0.0
+        }
+    ]
+}

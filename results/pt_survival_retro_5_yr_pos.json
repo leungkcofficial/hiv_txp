@@ -1,0 +1,125 @@
+{
+    "Pooled_Survival_Proportion": 0.8351098425734869,
+    "95%_CI": [
+        0.7697679460348317,
+        0.8846851983006719
+    ],
+    "I2": 62.2834711548939,
+    "Q": 31.816289482209484,
+    "p_value_for_Q": 0.0014770210923542582,
+    "tau2": 0.27704308019664464,
+    "combined_results": [
+        {
+            "study_id": "Ailioaie2017",
+            "sample_size": 24,
+            "effect_size": 0.9167,
+            "ci_lb": 0.7212182357511829,
+            "ci_ub": 0.9790849808919312,
+            "weight_percent": 5.456766872107678
+        },
+        {
+            "study_id": "Alfano2018",
+            "sample_size": 19,
+            "effect_size": 0.708,
+            "ci_lb": 0.47420975678846145,
+            "ci_ub": 0.8669934665334583,
+            "weight_percent": 8.444386625464944
+        },
+        {
+            "study_id": "Alfano2020",
+            "sample_size": 22,
+            "effect_size": 0.6364,
+            "ci_lb": 0.4233776834859277,
+            "ci_ub": 0.8066626104424622,
+            "weight_percent": 9.481413975916592
+        },
+        {
+            "study_id": "Delaney1992",
+            "sample_size": 17,
+            "effect_size": 0.47059999999999996,
+            "ci_lb": 0.25537963653474083,
+            "ci_ub": 0.6973376023996062,
+            "weight_percent": 8.748376958887738
+        },
+        {
+            "study_id": "Gathogo2017",
+            "sample_size": 40,
+            "effect_size": 0.9100000000000001,
+            "ci_lb": 0.7739490229799927,
+            "ci_ub": 0.9675957369947686,
+            "weight_percent": 7.709619719557477
+        },
+        {
+            "study_id": "Izzo2018",
+            "sample_size": 28,
+            "effect_size": 0.821,
+            "ci_lb": 0.6357374501052291,
+            "ci_ub": 0.9233928138860776,
+            "weight_percent": 8.632111288916523
+        },
+        {
+            "study_id": "Locke2015",
+            "sample_size": 499,
+            "effect_size": 0.8289,
+            "ci_lb": 0.7932889151356182,
+            "ci_ub": 0.8594630373256528,
+            "weight_percent": 15.417833214242318
+        },
+        {
+            "study_id": "Martina2011",
+            "sample_size": 11,
+            "effect_size": 0.9499999999999998,
+            "ci_lb": 0.5579677398917544,
+            "ci_ub": 0.9965155678681303,
+            "weight_percent": 2.0490311263074132
+        },
+        {
+            "study_id": "Mazuecos2011",
+            "sample_size": 20,
+            "effect_size": 0.9499999999999998,
+            "ci_lb": 0.7177891566240235,
+            "ci_ub": 0.9930037249896921,
+            "weight_percent": 3.376209763897947
+        },
+        {
+            "study_id": "Mazuecos2012",
+            "sample_size": 10,
+            "effect_size": 0.9499999999999998,
+            "ci_lb": 0.5251218481660807,
+            "ci_ub": 0.9969461871819594,
+            "weight_percent": 1.8844179204292082
+        },
+        {
+            "study_id": "Mazuecos2013",
+            "sample_size": 36,
+            "effect_size": 0.9167,
+            "ci_lb": 0.7713927677889747,
+            "ci_ub": 0.9728927109397448,
+            "weight_percent": 7.005584271355872
+        },
+        {
+            "study_id": "Qiu2006",
+            "sample_size": 38,
+            "effect_size": 0.8730000000000001,
+            "ci_lb": 0.7256880330788936,
+            "ci_ub": 0.9469817057771978,
+            "weight_percent": 8.727210467035686
+        },
+        {
+            "study_id": "Roland2016",
+            "sample_size": 150,
+            "effect_size": 0.887,
+            "ci_lb": 0.8256305163551664,
+            "ci_ub": 0.9286373376863998,
+            "weight_percent": 13.067037795880598
+        },
+        {
+            "study_id": "Pooled Estimate",
+            "sample_size": 914,
+            "effect_size": 0.8351098425734869,
+            "ci_lb": 0.7697679460348317,
+            "ci_ub": 0.8846851983006719,
+            "weight_percent": 100.0
+        }
+    ]
+}
