@@ -9,6 +9,10 @@
             "Roland2008",
             "Stock2010"
         ],
+        "factors":[
+            "pi_avoid",
+            "hbv"
+        ],
         "fixed_effects":{
             "coef":[
                 0.4363764211,

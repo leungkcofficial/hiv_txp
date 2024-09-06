@@ -9,6 +9,11 @@
             "Stock2010",
             "Touzot2010"
         ],
+        "factors":[
+            "pi_avoid",
+            "atg",
+            "cd4"
+        ],
         "fixed_effects":{
             "coef":[
                 0.7569667038,

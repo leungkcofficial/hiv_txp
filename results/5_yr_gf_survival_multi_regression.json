@@ -12,6 +12,9 @@
             "Qiu2006",
             "Roland2016"
         ],
+        "factors":[
+            "hcv"
+        ],
         "fixed_effects":{
             "coef":[
                 1.0708956195,

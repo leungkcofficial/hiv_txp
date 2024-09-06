@@ -10,6 +10,13 @@
             "Stock2010",
             "Touzot2010"
         ],
+        "factors":[
+            "pi_avoid",
+            "viral_breakthrough",
+            "hivan",
+            "il_2",
+            "induction_use"
+        ],
         "fixed_effects":{
             "coef":[
                 0.7830754095,

@@ -8,6 +8,12 @@
             "Roland2008",
             "Touzot2010"
         ],
+        "factors":[
+            "pi_avoid",
+            "hbv",
+            "hcv",
+            "ii_post"
+        ],
         "fixed_effects":{
             "coef":[
                 1.9654118388,

@@ -8,6 +8,8 @@
     "Q": 0.0,
     "p_value_for_Q": NaN,
     "tau2": 0,
+    "Z": -1.6820361985481926,
+    "p_value_for_Z": 0.0925618208126684,
     "combined_results": [
         {
             "study_id": "Lorio2016",
