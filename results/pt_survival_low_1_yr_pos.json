@@ -1,0 +1,127 @@
+{
+    "Pooled_Survival_Proportion": 0.9491311848397277,
+    "95%_CI": [
+        0.9316192030755895,
+        0.9623397284036512
+    ],
+    "I2": 36.74443243615318,
+    "Q": 18.970662128496176,
+    "p_value_for_Q": 0.08923891974662879,
+    "tau2": 0.10438841832480243,
+    "combined_results": [
+        {
+            "study_id": "Alfano2018",
+            "sample_size": 19,
+            "effect_size": 0.9440000000000002,
+            "ci_lb": 0.7045558682532364,
+            "ci_ub": 0.9916777130379811,
+            "weight_percent": 2.3401440826307893
+        },
+        {
+            "study_id": "Durand2021",
+            "sample_size": 75,
+            "effect_size": 0.9736842105263158,
+            "ci_lb": 0.8999844815649506,
+            "ci_ub": 0.9934699139844858,
+            "weight_percent": 4.120279171827736
+        },
+        {
+            "study_id": "Durand2024",
+            "sample_size": 198,
+            "effect_size": 0.9450000000000001,
+            "ci_lb": 0.9031629061833404,
+            "ci_ub": 0.9693748752621613,
+            "weight_percent": 12.77106771689942
+        },
+        {
+            "study_id": "Gathogo2014",
+            "sample_size": 35,
+            "effect_size": 0.9129999999999999,
+            "ci_lb": 0.7641045362554083,
+            "ci_ub": 0.9714279926889843,
+            "weight_percent": 5.546642502739053
+        },
+        {
+            "study_id": "Gathogo2016",
+            "sample_size": 78,
+            "effect_size": 0.9679999999999999,
+            "ci_lb": 0.8955333242433218,
+            "ci_ub": 0.9907188107758077,
+            "weight_percent": 4.966755993961761
+        },
+        {
+            "study_id": "Locke2009",
+            "sample_size": 100,
+            "effect_size": 0.9540000000000002,
+            "ci_lb": 0.8905522779672496,
+            "ci_ub": 0.9814333975400881,
+            "weight_percent": 7.747320283973987
+        },
+        {
+            "study_id": "Locke2014",
+            "sample_size": 516,
+            "effect_size": 0.9736842105263158,
+            "ci_lb": 0.9557180860028623,
+            "ci_ub": 0.9844794668774118,
+            "weight_percent": 14.299011455704925
+        },
+        {
+            "study_id": "Locke2015",
+            "sample_size": 499,
+            "effect_size": 0.9456,
+            "ci_lb": 0.9219107900279123,
+            "ci_ub": 0.9623959577952114,
+            "weight_percent": 17.95751263671974
+        },
+        {
+            "study_id": "Malat2018",
+            "sample_size": 120,
+            "effect_size": 0.9667,
+            "ci_lb": 0.914596500320516,
+            "ci_ub": 0.9874519891254134,
+            "weight_percent": 7.08623584923108
+        },
+        {
+            "study_id": "Mazuecos2011",
+            "sample_size": 20,
+            "effect_size": 0.9736842105263158,
+            "ci_lb": 0.7053651169568796,
+            "ci_ub": 0.9982543082483,
+            "weight_percent": 1.2521718061847895
+        },
+        {
+            "study_id": "Mazuecos2013",
+            "sample_size": 36,
+            "effect_size": 0.9736842105263158,
+            "ci_lb": 0.8278090510202037,
+            "ci_ub": 0.9965005969494237,
+            "weight_percent": 2.1659225394141055
+        },
+        {
+            "study_id": "Vicari2016",
+            "sample_size": 53,
+            "effect_size": 0.9059999999999999,
+            "ci_lb": 0.793014719916375,
+            "ci_ub": 0.9603914114306376,
+            "weight_percent": 7.897670366082278
+        },
+        {
+            "study_id": "Vivanco2013",
+            "sample_size": 88,
+            "effect_size": 0.8864,
+            "ci_lb": 0.8015568382359096,
+            "ci_ub": 0.9377845257778351,
+            "weight_percent": 11.849265594630335
+        },
+        {
+            "study_id": "Pooled Estimate",
+            "sample_size": 1837,
+            "effect_size": 0.9491311848397277,
+            "ci_lb": 0.9316192030755895,
+            "ci_ub": 0.9623397284036512,
+            "weight_percent": 100.00000000000001
+        }
+    ],
+    "Z_value": 18.239056401172256,
+    "p_value_for_Z": 0.0
+}

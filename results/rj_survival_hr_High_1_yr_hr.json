@@ -1,0 +1,31 @@
+{
+    "Pooled_Hazard_Ratio": 0.5588849169015608,
+    "95%_CI": [
+        0.47623443759203404,
+        0.6558793856223414
+    ],
+    "I2": 0,
+    "Q": 0.0,
+    "p_value_for_Q": NaN,
+    "tau2": 0,
+    "Z": -7.12570895917693,
+    "p_value_for_Z": 1.035393992765421e-12,
+    "combined_results": [
+        {
+            "study_id": "Stock2010",
+            "sample_size": 150.0,
+            "effect_size": 0.5588849169015608,
+            "ci_lb": 0.47623443759203404,
+            "ci_ub": 0.6558793856223414,
+            "weight_percent": 100.0
+        },
+        {
+            "study_id": "Pooled Estimate",
+            "sample_size": 150.0,
+            "effect_size": 0.5588849169015608,
+            "ci_lb": 0.47623443759203404,
+            "ci_ub": 0.6558793856223414,
+            "weight_percent": 100.0
+        }
+    ]
+}

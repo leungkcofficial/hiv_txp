@@ -8,6 +8,8 @@
     "Q": 0.0,
     "p_value_for_Q": NaN,
     "tau2": 0,
+    "Z": 3.2042846326356407,
+    "p_value_for_Z": 0.0013539854708475296,
     "combined_results": [
         {
             "study_id": "Muller2015",

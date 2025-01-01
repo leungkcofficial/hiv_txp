@@ -1,55 +1,115 @@
 {
-    "Pooled_Survival_Proportion": 0.6222112470758456,
-    "95%_CI": [
-        0.45979029165452157,
-        0.8420074173261893
-    ],
-    "I2": 82.74804606787373,
-    "Q": 17.389334633067005,
-    "p_value_for_Q": 0.0005876843036662915,
-    "tau2": 0.073772384702726,
-    "Z": -3.0741951863141237,
-    "p_value_for_Z": 0.0021107128872628333,
-    "combined_results": [
-        {
-            "study_id": "Apewokin2018",
-            "sample_size": 605,
-            "effect_size": 0.8209109304802125,
-            "ci_lb": 0.7580347909525735,
-            "ci_ub": 0.8890024096849805,
-            "weight_percent": 31.58260940485486
-        },
-        {
-            "study_id": "Mazuecos2011",
-            "sample_size": 20,
-            "effect_size": 0.6142779714926636,
-            "ci_lb": 0.3963026648148597,
-            "ci_ub": 0.9521445596067893,
-            "weight_percent": 19.24603033888006
-        },
-        {
-            "study_id": "Mazuecos2013",
-            "sample_size": 36,
-            "effect_size": 0.4432676583966929,
-            "ci_lb": 0.319739664406121,
-            "ci_ub": 0.6145193695171896,
-            "weight_percent": 23.45763918951419
-        },
-        {
-            "study_id": "Vicari2016",
-            "sample_size": 53,
-            "effect_size": 0.6090188959895249,
-            "ci_lb": 0.46527219028557304,
-            "ci_ub": 0.7971764128963899,
-            "weight_percent": 25.713721066750892
-        },
-        {
-            "study_id": "Pooled Estimate",
-            "sample_size": 714,
-            "effect_size": 0.6222112470758456,
-            "ci_lb": 0.45979029165452157,
-            "ci_ub": 0.8420074173261893,
-            "weight_percent": 100.00000000000001
-        }
-    ]
+    "Full_Data": {
+        "Pooled_Hazard_Ratio": 0.6222112470758456,
+        "95%_CI": [
+            0.45979029165452157,
+            0.8420074173261893
+        ],
+        "I2": 82.74804606787373,
+        "Q": 17.389334633067005,
+        "p_value_for_Q": 0.0005876843036662915,
+        "tau2": 0.073772384702726,
+        "Z": -3.0741951863141237,
+        "p_value_for_Z": 0.0021107128872628333,
+        "combined_results": [
+            {
+                "study_id": "Apewokin2018",
+                "sample_size": 605,
+                "effect_size": 0.8209109304802125,
+                "ci_lb": 0.7580347909525735,
+                "ci_ub": 0.8890024096849805,
+                "weight_percent": 31.58260940485486
+            },
+            {
+                "study_id": "Mazuecos2011",
+                "sample_size": 20,
+                "effect_size": 0.6142779714926636,
+                "ci_lb": 0.3963026648148597,
+                "ci_ub": 0.9521445596067893,
+                "weight_percent": 19.24603033888006
+            },
+            {
+                "study_id": "Mazuecos2013",
+                "sample_size": 36,
+                "effect_size": 0.4432676583966929,
+                "ci_lb": 0.319739664406121,
+                "ci_ub": 0.6145193695171896,
+                "weight_percent": 23.45763918951419
+            },
+            {
+                "study_id": "Vicari2016",
+                "sample_size": 53,
+                "effect_size": 0.6090188959895249,
+                "ci_lb": 0.46527219028557304,
+                "ci_ub": 0.7971764128963899,
+                "weight_percent": 25.713721066750892
+            },
+            {
+                "study_id": "Pooled Estimate",
+                "sample_size": 714,
+                "effect_size": 0.6222112470758456,
+                "ci_lb": 0.45979029165452157,
+                "ci_ub": 0.8420074173261893,
+                "weight_percent": 100.00000000000001
+            }
+        ]
+    },
+    "Best_Combination_Data": {
+        "Pooled_Hazard_Ratio": 0.7076608694903893,
+        "95%_CI": [
+            0.5580833411567312,
+            0.8973281753401315
+        ],
+        "I2": 65.01341670403316,
+        "Q": 5.716477036586064,
+        "p_value_for_Q": 0.05736972703851073,
+        "tau2": 0.02785816949480765,
+        "Z": -2.854200623961149,
+        "p_value_for_Z": 0.004314527510250299,
+        "combined_results": [
+            {
+                "study_id": "Apewokin2018",
+                "sample_size": 605,
+                "effect_size": 0.8209109304802125,
+                "ci_lb": 0.7580347909525735,
+                "ci_ub": 0.8890024096849805,
+                "weight_percent": 49.736105411382184
+            },
+            {
+                "study_id": "Mazuecos2011",
+                "sample_size": 20,
+                "effect_size": 0.6142779714926636,
+                "ci_lb": 0.3963026648148597,
+                "ci_ub": 0.9521445596067893,
+                "weight_percent": 18.851782706711198
+            },
+            {
+                "study_id": "Vicari2016",
+                "sample_size": 53,
+                "effect_size": 0.6090188959895249,
+                "ci_lb": 0.46527219028557304,
+                "ci_ub": 0.7971764128963899,
+                "weight_percent": 31.412111881906608
+            },
+            {
+                "study_id": "Pooled Estimate",
+                "sample_size": 678,
+                "effect_size": 0.7076608694903893,
+                "ci_lb": 0.5580833411567312,
+                "ci_ub": 0.8973281753401315,
+                "weight_percent": 100.0
+            }
+        ],
+        "best_combination": [
+            "Apewokin2018",
+            "Mazuecos2011",
+            "Vicari2016"
+        ]
+    },
+    "Study_Contributions": {
+        "Apewokin2018": 14.251274635469631,
+        "Mazuecos2011": 44.39264590288122,
+        "Mazuecos2013": 25.794354355484156,
+        "Vicari2016": 34.80562838058973
+    }
 }

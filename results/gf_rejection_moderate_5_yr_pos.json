@@ -1,0 +1,31 @@
+{
+    "Pooled_Survival_Proportion": 0.5710000000000001,
+    "95%_CI": [
+        0.38640197683794736,
+        0.7377537969060857
+    ],
+    "I2": 0,
+    "Q": 0.0,
+    "p_value_for_Q": NaN,
+    "tau2": 0,
+    "combined_results": [
+        {
+            "study_id": "Izzo2018",
+            "sample_size": 28,
+            "effect_size": 0.5710000000000001,
+            "ci_lb": 0.38640197683794736,
+            "ci_ub": 0.7377537969060857,
+            "weight_percent": 100.0
+        },
+        {
+            "study_id": "Pooled Estimate",
+            "sample_size": 28,
+            "effect_size": 0.5710000000000001,
+            "ci_lb": 0.38640197683794736,
+            "ci_ub": 0.7377537969060857,
+            "weight_percent": 100.0
+        }
+    ],
+    "Z_value": 0.748839801514187,
+    "p_value_for_Z": 0.45395376708259283
+}

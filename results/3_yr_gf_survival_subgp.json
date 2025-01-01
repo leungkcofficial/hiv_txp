@@ -4,6 +4,7 @@
         "studies involved":[
             "Alfano2018",
             "Azar2017",
+            "Durand2024",
             "Gathogo2014",
             "Gathogo2017",
             "Matignon2019",
@@ -18,195 +19,210 @@
             {
                 "study_id":"Alfano2018",
                 "fixed_effect":{
-                    "coef":0.1844608986,
+                    "coef":0.5061891614,
                     "weight":3.354621,
-                    "ci_lower":-0.8725293191,
-                    "ci_upper":1.2414511163
+                    "ci_lower":-0.9500245697,
+                    "ci_upper":1.9624028926
                 },
                 "random_effect":{
-                    "coef":-0.0967213658,
+                    "coef":-0.1348896918,
                     "weight":3.354621,
-                    "ci_lower":-0.5086844343,
-                    "ci_upper":0.3152417026
+                    "ci_lower":-0.5842880533,
+                    "ci_upper":0.3145086696
                 }
             },
             {
                 "study_id":"Azar2017",
                 "fixed_effect":{
-                    "coef":0.1844608986,
+                    "coef":0.5061891614,
                     "weight":0.5640495868,
-                    "ci_lower":-0.8725293191,
-                    "ci_upper":1.2414511163
+                    "ci_lower":-0.9500245697,
+                    "ci_upper":1.9624028926
                 },
                 "random_effect":{
-                    "coef":-0.0967213658,
+                    "coef":-0.1348896918,
                     "weight":0.5640495868,
-                    "ci_lower":-0.5086844343,
-                    "ci_upper":0.3152417026
+                    "ci_lower":-0.5842880533,
+                    "ci_upper":0.3145086696
+                }
+            },
+            {
+                "study_id":"Durand2024",
+                "fixed_effect":{
+                    "coef":0.5061891614,
+                    "weight":9.4949494949,
+                    "ci_lower":-0.9500245697,
+                    "ci_upper":1.9624028926
+                },
+                "random_effect":{
+                    "coef":-0.1348896918,
+                    "weight":9.4949494949,
+                    "ci_lower":-0.5842880533,
+                    "ci_upper":0.3145086696
                 }
             },
             {
                 "study_id":"Gathogo2014",
                 "fixed_effect":{
-                    "coef":0.1844608986,
+                    "coef":0.5061891614,
                     "weight":4.535685,
-                    "ci_lower":-0.8725293191,
-                    "ci_upper":1.2414511163
+                    "ci_lower":-0.9500245697,
+                    "ci_upper":1.9624028926
                 },
                 "random_effect":{
-                    "coef":-0.0967213658,
+                    "coef":-0.1348896918,
                     "weight":4.535685,
-                    "ci_lower":-0.5086844343,
-                    "ci_upper":0.3152417026
+                    "ci_lower":-0.5842880533,
+                    "ci_upper":0.3145086696
                 }
             },
             {
                 "study_id":"Gathogo2017",
                 "fixed_effect":{
-                    "coef":0.1844608986,
+                    "coef":0.5061891614,
                     "weight":6.864,
-                    "ci_lower":-0.8725293191,
-                    "ci_upper":1.2414511163
+                    "ci_lower":-0.9500245697,
+                    "ci_upper":1.9624028926
                 },
                 "random_effect":{
-                    "coef":-0.0967213658,
+                    "coef":-0.1348896918,
                     "weight":6.864,
-                    "ci_lower":-0.5086844343,
-                    "ci_upper":0.3152417026
+                    "ci_lower":-0.5842880533,
+                    "ci_upper":0.3145086696
                 }
             },
             {
                 "study_id":"Matignon2019",
                 "fixed_effect":{
-                    "coef":0.1844608986,
+                    "coef":0.5061891614,
                     "weight":9.0036,
-                    "ci_lower":-0.8725293191,
-                    "ci_upper":1.2414511163
+                    "ci_lower":-0.9500245697,
+                    "ci_upper":1.9624028926
                 },
                 "random_effect":{
-                    "coef":-0.0967213658,
+                    "coef":-0.1348896918,
                     "weight":9.0036,
-                    "ci_lower":-0.5086844343,
-                    "ci_upper":0.3152417026
+                    "ci_lower":-0.5842880533,
+                    "ci_upper":0.3145086696
                 }
             },
             {
                 "study_id":"Muller2015",
                 "fixed_effect":{
-                    "coef":0.1844608986,
+                    "coef":0.5061891614,
                     "weight":3.6288,
-                    "ci_lower":-0.8725293191,
-                    "ci_upper":1.2414511163
+                    "ci_lower":-0.9500245697,
+                    "ci_upper":1.9624028926
                 },
                 "random_effect":{
-                    "coef":-0.0967213658,
+                    "coef":-0.1348896918,
                     "weight":3.6288,
-                    "ci_lower":-0.5086844343,
-                    "ci_upper":0.3152417026
+                    "ci_lower":-0.5842880533,
+                    "ci_upper":0.3145086696
                 }
             },
             {
                 "study_id":"Muthukumar2013",
                 "fixed_effect":{
-                    "coef":0.1844608986,
+                    "coef":0.5061891614,
                     "weight":1.6929,
-                    "ci_lower":-0.8725293191,
-                    "ci_upper":1.2414511163
+                    "ci_lower":-0.9500245697,
+                    "ci_upper":1.9624028926
                 },
                 "random_effect":{
-                    "coef":-0.0967213658,
+                    "coef":-0.1348896918,
                     "weight":1.6929,
-                    "ci_lower":-0.5086844343,
-                    "ci_upper":0.3152417026
+                    "ci_lower":-0.5842880533,
+                    "ci_upper":0.3145086696
                 }
             },
             {
                 "study_id":"Roland2008",
                 "fixed_effect":{
-                    "coef":0.1844608986,
+                    "coef":0.5061891614,
                     "weight":2.5398,
-                    "ci_lower":-0.8725293191,
-                    "ci_upper":1.2414511163
+                    "ci_lower":-0.9500245697,
+                    "ci_upper":1.9624028926
                 },
                 "random_effect":{
-                    "coef":-0.0967213658,
+                    "coef":-0.1348896918,
                     "weight":2.5398,
-                    "ci_lower":-0.5086844343,
-                    "ci_upper":0.3152417026
+                    "ci_lower":-0.5842880533,
+                    "ci_upper":0.3145086696
                 }
             },
             {
                 "study_id":"Sawinski2015",
                 "fixed_effect":{
-                    "coef":0.1844608986,
+                    "coef":0.5061891614,
                     "weight":98.3421,
-                    "ci_lower":-0.8725293191,
-                    "ci_upper":1.2414511163
+                    "ci_lower":-0.9500245697,
+                    "ci_upper":1.9624028926
                 },
                 "random_effect":{
-                    "coef":-0.0967213658,
+                    "coef":-0.1348896918,
                     "weight":98.3421,
-                    "ci_lower":-0.5086844343,
-                    "ci_upper":0.3152417026
+                    "ci_lower":-0.5842880533,
+                    "ci_upper":0.3145086696
                 }
             },
             {
                 "study_id":"Sawinski2017",
                 "fixed_effect":{
-                    "coef":0.1844608986,
+                    "coef":0.5061891614,
                     "weight":37.303188,
-                    "ci_lower":-0.8725293191,
-                    "ci_upper":1.2414511163
+                    "ci_lower":-0.9500245697,
+                    "ci_upper":1.9624028926
                 },
                 "random_effect":{
-                    "coef":-0.0967213658,
+                    "coef":-0.1348896918,
                     "weight":37.303188,
-                    "ci_lower":-0.5086844343,
-                    "ci_upper":0.3152417026
+                    "ci_lower":-0.5842880533,
+                    "ci_upper":0.3145086696
                 }
             },
             {
                 "study_id":"Stock2010",
                 "fixed_effect":{
-                    "coef":0.1844608986,
+                    "coef":0.5061891614,
                     "weight":29.07465,
-                    "ci_lower":-0.8725293191,
-                    "ci_upper":1.2414511163
+                    "ci_lower":-0.9500245697,
+                    "ci_upper":1.9624028926
                 },
                 "random_effect":{
-                    "coef":-0.0967213658,
+                    "coef":-0.1348896918,
                     "weight":29.07465,
-                    "ci_lower":-0.5086844343,
-                    "ci_upper":0.3152417026
+                    "ci_lower":-0.5842880533,
+                    "ci_upper":0.3145086696
                 }
             }
         ],
         "fixed_effects":{
             "coef":[
-                1.4460034511,
-                0.1844608986
+                1.4431165342,
+                0.5061891614
             ],
             "pvalues":[
-                0.0000034672,
-                0.7401651234
+                0.0000310882,
+                0.5111449851
             ],
-            "rsquared":0.0128329642,
-            "aic":18.0238011031,
-            "bic":18.8195916487
+            "rsquared":0.0443590595,
+            "aic":27.2390225477,
+            "bic":28.2088358473
         },
         "random_effects":{
             "coef":[
-                1.6571563846,
-                -0.0967213658,
+                1.7804399053,
+                -0.1348896918,
                 1.0
             ],
             "pvalues":[
-                6.679201448e-84,
-                0.6453927534,
+                5.344598191e-69,
+                0.556326854,
                 null
             ],
-            "group_variance":0.1570077997,
-            "log_likelihood":-8.4036344013
+            "group_variance":0.2200331568,
+            "log_likelihood":-10.9745643841
         }
     },
     {
@@ -216,6 +232,7 @@
             "Alfano2018",
             "Azar2017",
             "Boyle2017",
+            "Durand2024",
             "Gathogo2014",
             "Gathogo2017",
             "Locke2015",
@@ -234,285 +251,300 @@
             {
                 "study_id":"Abbott2004",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":2.2325,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":2.2325,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Alfano2018",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":3.354621,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":3.354621,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Azar2017",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":0.6175,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":0.6175,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Boyle2017",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":25.38498456,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":25.38498456,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
+                }
+            },
+            {
+                "study_id":"Durand2024",
+                "fixed_effect":{
+                    "coef":-2.5692021603,
+                    "weight":9.4949494949,
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
+                },
+                "random_effect":{
+                    "coef":-0.8945471409,
+                    "weight":9.4949494949,
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Gathogo2014",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":4.535685,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":4.535685,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Gathogo2017",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":6.864,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":6.864,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Locke2015",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":86.462229,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":86.462229,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Malat2018",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":28.3657332,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":28.3657332,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Matignon2019",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":9.0036,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":9.0036,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Mazuecos2011",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":3.80928,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":3.80928,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Mazuecos2012",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":0.475,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":0.475,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Mazuecos2013",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":4.282416,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":4.282416,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Muthukumar2013",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":1.6929,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":1.6929,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Roland2008",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":2.5398,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":2.5398,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Sawinski2015",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":98.3421,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":98.3421,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Sawinski2017",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":37.303188,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":37.303188,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             },
             {
                 "study_id":"Shelton2017",
                 "fixed_effect":{
-                    "coef":-2.2101321637,
+                    "coef":-2.5692021603,
                     "weight":4.886442,
-                    "ci_lower":-3.9892390479,
-                    "ci_upper":-0.4310252795
+                    "ci_lower":-4.5162720181,
+                    "ci_upper":-0.6221323025
                 },
                 "random_effect":{
-                    "coef":-0.7089105795,
+                    "coef":-0.8945471409,
                     "weight":4.886442,
-                    "ci_lower":-1.4299773997,
-                    "ci_upper":0.0121562407
+                    "ci_lower":-2.5631518954,
+                    "ci_upper":0.7740576136
                 }
             }
         ],
         "fixed_effects":{
             "coef":[
-                1.843839404,
-                -2.2101321637
+                1.9743702753,
+                -2.5692021603
             ],
             "pvalues":[
-                0.0000029721,
-                0.0278576162
+                0.0000023243,
+                0.0198876775
             ],
-            "rsquared":0.2832738771,
-            "aic":40.074130544,
-            "bic":41.7405572321
+            "rsquared":0.294805014,
+            "aic":45.7747818046,
+            "bic":47.5555253204
         },
         "random_effects":{
             "coef":[
-                1.7604217497,
-                -0.7089105795,
+                1.8810735343,
+                -0.8945471409,
                 1.0
             ],
             "pvalues":[
-                1.140147645e-136,
-                0.0539849926,
+                0.0000000005,
+                0.2933662807,
                 null
             ],
-            "group_variance":0.3187192706,
-            "log_likelihood":-19.2880969907
+            "group_variance":0.3451164741,
+            "log_likelihood":-21.1579869576
         }
     },
     {
@@ -520,6 +552,7 @@
         "studies involved":[
             "Alfano2018",
             "Boyle2017",
+            "Durand2024",
             "Gathogo2014",
             "Gathogo2017",
             "Matignon2019",
@@ -535,210 +568,225 @@
             {
                 "study_id":"Alfano2018",
                 "fixed_effect":{
-                    "coef":9.3245148759,
+                    "coef":11.0381829057,
                     "weight":3.354621,
-                    "ci_lower":0.5771631021,
-                    "ci_upper":18.0718666498
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
                 },
                 "random_effect":{
-                    "coef":3.6407757051,
+                    "coef":3.7281172723,
                     "weight":3.354621,
-                    "ci_lower":0.6804984532,
-                    "ci_upper":6.6010529571
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
                 }
             },
             {
                 "study_id":"Boyle2017",
                 "fixed_effect":{
-                    "coef":9.3245148759,
+                    "coef":11.0381829057,
                     "weight":25.38498456,
-                    "ci_lower":0.5771631021,
-                    "ci_upper":18.0718666498
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
                 },
                 "random_effect":{
-                    "coef":3.6407757051,
+                    "coef":3.7281172723,
                     "weight":25.38498456,
-                    "ci_lower":0.6804984532,
-                    "ci_upper":6.6010529571
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
+                }
+            },
+            {
+                "study_id":"Durand2024",
+                "fixed_effect":{
+                    "coef":11.0381829057,
+                    "weight":9.4949494949,
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
+                },
+                "random_effect":{
+                    "coef":3.7281172723,
+                    "weight":9.4949494949,
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
                 }
             },
             {
                 "study_id":"Gathogo2014",
                 "fixed_effect":{
-                    "coef":9.3245148759,
+                    "coef":11.0381829057,
                     "weight":4.535685,
-                    "ci_lower":0.5771631021,
-                    "ci_upper":18.0718666498
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
                 },
                 "random_effect":{
-                    "coef":3.6407757051,
+                    "coef":3.7281172723,
                     "weight":4.535685,
-                    "ci_lower":0.6804984532,
-                    "ci_upper":6.6010529571
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
                 }
             },
             {
                 "study_id":"Gathogo2017",
                 "fixed_effect":{
-                    "coef":9.3245148759,
+                    "coef":11.0381829057,
                     "weight":6.864,
-                    "ci_lower":0.5771631021,
-                    "ci_upper":18.0718666498
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
                 },
                 "random_effect":{
-                    "coef":3.6407757051,
+                    "coef":3.7281172723,
                     "weight":6.864,
-                    "ci_lower":0.6804984532,
-                    "ci_upper":6.6010529571
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
                 }
             },
             {
                 "study_id":"Matignon2019",
                 "fixed_effect":{
-                    "coef":9.3245148759,
+                    "coef":11.0381829057,
                     "weight":9.0036,
-                    "ci_lower":0.5771631021,
-                    "ci_upper":18.0718666498
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
                 },
                 "random_effect":{
-                    "coef":3.6407757051,
+                    "coef":3.7281172723,
                     "weight":9.0036,
-                    "ci_lower":0.6804984532,
-                    "ci_upper":6.6010529571
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
                 }
             },
             {
                 "study_id":"Mazuecos2011",
                 "fixed_effect":{
-                    "coef":9.3245148759,
+                    "coef":11.0381829057,
                     "weight":3.80928,
-                    "ci_lower":0.5771631021,
-                    "ci_upper":18.0718666498
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
                 },
                 "random_effect":{
-                    "coef":3.6407757051,
+                    "coef":3.7281172723,
                     "weight":3.80928,
-                    "ci_lower":0.6804984532,
-                    "ci_upper":6.6010529571
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
                 }
             },
             {
                 "study_id":"Mazuecos2013",
                 "fixed_effect":{
-                    "coef":9.3245148759,
+                    "coef":11.0381829057,
                     "weight":4.282416,
-                    "ci_lower":0.5771631021,
-                    "ci_upper":18.0718666498
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
                 },
                 "random_effect":{
-                    "coef":3.6407757051,
+                    "coef":3.7281172723,
                     "weight":4.282416,
-                    "ci_lower":0.6804984532,
-                    "ci_upper":6.6010529571
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
                 }
             },
             {
                 "study_id":"Muller2015",
                 "fixed_effect":{
-                    "coef":9.3245148759,
+                    "coef":11.0381829057,
                     "weight":3.6288,
-                    "ci_lower":0.5771631021,
-                    "ci_upper":18.0718666498
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
                 },
                 "random_effect":{
-                    "coef":3.6407757051,
+                    "coef":3.7281172723,
                     "weight":3.6288,
-                    "ci_lower":0.6804984532,
-                    "ci_upper":6.6010529571
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
                 }
             },
             {
                 "study_id":"Muthukumar2013",
                 "fixed_effect":{
-                    "coef":9.3245148759,
+                    "coef":11.0381829057,
                     "weight":1.6929,
-                    "ci_lower":0.5771631021,
-                    "ci_upper":18.0718666498
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
                 },
                 "random_effect":{
-                    "coef":3.6407757051,
+                    "coef":3.7281172723,
                     "weight":1.6929,
-                    "ci_lower":0.6804984532,
-                    "ci_upper":6.6010529571
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
                 }
             },
             {
                 "study_id":"Roland2008",
                 "fixed_effect":{
-                    "coef":9.3245148759,
+                    "coef":11.0381829057,
                     "weight":2.5398,
-                    "ci_lower":0.5771631021,
-                    "ci_upper":18.0718666498
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
                 },
                 "random_effect":{
-                    "coef":3.6407757051,
+                    "coef":3.7281172723,
                     "weight":2.5398,
-                    "ci_lower":0.6804984532,
-                    "ci_upper":6.6010529571
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
                 }
             },
             {
                 "study_id":"Sawinski2015",
                 "fixed_effect":{
-                    "coef":9.3245148759,
+                    "coef":11.0381829057,
                     "weight":98.3421,
-                    "ci_lower":0.5771631021,
-                    "ci_upper":18.0718666498
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
                 },
                 "random_effect":{
-                    "coef":3.6407757051,
+                    "coef":3.7281172723,
                     "weight":98.3421,
-                    "ci_lower":0.6804984532,
-                    "ci_upper":6.6010529571
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
                 }
             },
             {
                 "study_id":"Stock2010",
                 "fixed_effect":{
-                    "coef":9.3245148759,
+                    "coef":11.0381829057,
                     "weight":29.07465,
-                    "ci_lower":0.5771631021,
-                    "ci_upper":18.0718666498
+                    "ci_lower":-0.6170408925,
+                    "ci_upper":22.6934067038
                 },
                 "random_effect":{
-                    "coef":3.6407757051,
+                    "coef":3.7281172723,
                     "weight":29.07465,
-                    "ci_lower":0.6804984532,
-                    "ci_upper":6.6010529571
+                    "ci_lower":-0.0219112328,
+                    "ci_upper":7.4781457775
                 }
             }
         ],
         "fixed_effects":{
             "coef":[
-                0.8041433009,
-                9.3245148759
+                0.7961969818,
+                11.0381829057
             ],
             "pvalues":[
-                0.0065720028,
-                0.0632007873
+                0.0284380538,
+                0.0903849739
             ],
-            "rsquared":0.3038768071,
-            "aic":21.8605393302,
-            "bic":22.8303526298
+            "rsquared":0.2385229678,
+            "aic":30.9200989855,
+            "bic":32.0499977004
         },
         "random_effects":{
             "coef":[
-                1.1246857764,
-                3.6407757051,
+                1.2416849319,
+                3.7281172723,
                 1.0
             ],
             "pvalues":[
                 0.0,
-                0.0159281331,
+                0.0513494492,
                 null
             ],
-            "group_variance":0.0788240817,
-            "log_likelihood":-4.2534349674
+            "group_variance":0.1775275982,
+            "log_likelihood":-9.2542251908
         }
     },
     {
@@ -747,6 +795,7 @@
             "Alfano2018",
             "Azar2017",
             "Boyle2017",
+            "Durand2024",
             "Gathogo2014",
             "Malat2018",
             "Matignon2019",
@@ -760,195 +809,210 @@
             {
                 "study_id":"Alfano2018",
                 "fixed_effect":{
-                    "coef":-0.0025344174,
+                    "coef":-0.0000245449,
                     "weight":3.354621,
-                    "ci_lower":-0.008494871,
-                    "ci_upper":0.0034260363
+                    "ci_lower":-0.0084496204,
+                    "ci_upper":0.0084005307
                 },
                 "random_effect":{
-                    "coef":0.0007947147,
+                    "coef":0.0023986143,
                     "weight":3.354621,
-                    "ci_lower":-0.0018708885,
-                    "ci_upper":0.0034603179
+                    "ci_lower":0.0022415453,
+                    "ci_upper":0.0025556833
                 }
             },
             {
                 "study_id":"Azar2017",
                 "fixed_effect":{
-                    "coef":-0.0025344174,
+                    "coef":-0.0000245449,
                     "weight":0.5640495868,
-                    "ci_lower":-0.008494871,
-                    "ci_upper":0.0034260363
+                    "ci_lower":-0.0084496204,
+                    "ci_upper":0.0084005307
                 },
                 "random_effect":{
-                    "coef":0.0007947147,
+                    "coef":0.0023986143,
                     "weight":0.5640495868,
-                    "ci_lower":-0.0018708885,
-                    "ci_upper":0.0034603179
+                    "ci_lower":0.0022415453,
+                    "ci_upper":0.0025556833
                 }
             },
             {
                 "study_id":"Boyle2017",
                 "fixed_effect":{
-                    "coef":-0.0025344174,
+                    "coef":-0.0000245449,
                     "weight":25.38498456,
-                    "ci_lower":-0.008494871,
-                    "ci_upper":0.0034260363
+                    "ci_lower":-0.0084496204,
+                    "ci_upper":0.0084005307
                 },
                 "random_effect":{
-                    "coef":0.0007947147,
+                    "coef":0.0023986143,
                     "weight":25.38498456,
-                    "ci_lower":-0.0018708885,
-                    "ci_upper":0.0034603179
+                    "ci_lower":0.0022415453,
+                    "ci_upper":0.0025556833
+                }
+            },
+            {
+                "study_id":"Durand2024",
+                "fixed_effect":{
+                    "coef":-0.0000245449,
+                    "weight":9.4949494949,
+                    "ci_lower":-0.0084496204,
+                    "ci_upper":0.0084005307
+                },
+                "random_effect":{
+                    "coef":0.0023986143,
+                    "weight":9.4949494949,
+                    "ci_lower":0.0022415453,
+                    "ci_upper":0.0025556833
                 }
             },
             {
                 "study_id":"Gathogo2014",
                 "fixed_effect":{
-                    "coef":-0.0025344174,
+                    "coef":-0.0000245449,
                     "weight":4.535685,
-                    "ci_lower":-0.008494871,
-                    "ci_upper":0.0034260363
+                    "ci_lower":-0.0084496204,
+                    "ci_upper":0.0084005307
                 },
                 "random_effect":{
-                    "coef":0.0007947147,
+                    "coef":0.0023986143,
                     "weight":4.535685,
-                    "ci_lower":-0.0018708885,
-                    "ci_upper":0.0034603179
+                    "ci_lower":0.0022415453,
+                    "ci_upper":0.0025556833
                 }
             },
             {
                 "study_id":"Malat2018",
                 "fixed_effect":{
-                    "coef":-0.0025344174,
+                    "coef":-0.0000245449,
                     "weight":28.3657332,
-                    "ci_lower":-0.008494871,
-                    "ci_upper":0.0034260363
+                    "ci_lower":-0.0084496204,
+                    "ci_upper":0.0084005307
                 },
                 "random_effect":{
-                    "coef":0.0007947147,
+                    "coef":0.0023986143,
                     "weight":28.3657332,
-                    "ci_lower":-0.0018708885,
-                    "ci_upper":0.0034603179
+                    "ci_lower":0.0022415453,
+                    "ci_upper":0.0025556833
                 }
             },
             {
                 "study_id":"Matignon2019",
                 "fixed_effect":{
-                    "coef":-0.0025344174,
+                    "coef":-0.0000245449,
                     "weight":9.0036,
-                    "ci_lower":-0.008494871,
-                    "ci_upper":0.0034260363
+                    "ci_lower":-0.0084496204,
+                    "ci_upper":0.0084005307
                 },
                 "random_effect":{
-                    "coef":0.0007947147,
+                    "coef":0.0023986143,
                     "weight":9.0036,
-                    "ci_lower":-0.0018708885,
-                    "ci_upper":0.0034603179
+                    "ci_lower":0.0022415453,
+                    "ci_upper":0.0025556833
                 }
             },
             {
                 "study_id":"Mazuecos2013",
                 "fixed_effect":{
-                    "coef":-0.0025344174,
+                    "coef":-0.0000245449,
                     "weight":4.282416,
-                    "ci_lower":-0.008494871,
-                    "ci_upper":0.0034260363
+                    "ci_lower":-0.0084496204,
+                    "ci_upper":0.0084005307
                 },
                 "random_effect":{
-                    "coef":0.0007947147,
+                    "coef":0.0023986143,
                     "weight":4.282416,
-                    "ci_lower":-0.0018708885,
-                    "ci_upper":0.0034603179
+                    "ci_lower":0.0022415453,
+                    "ci_upper":0.0025556833
                 }
             },
             {
                 "study_id":"Muller2015",
                 "fixed_effect":{
-                    "coef":-0.0025344174,
+                    "coef":-0.0000245449,
                     "weight":3.6288,
-                    "ci_lower":-0.008494871,
-                    "ci_upper":0.0034260363
+                    "ci_lower":-0.0084496204,
+                    "ci_upper":0.0084005307
                 },
                 "random_effect":{
-                    "coef":0.0007947147,
+                    "coef":0.0023986143,
                     "weight":3.6288,
-                    "ci_lower":-0.0018708885,
-                    "ci_upper":0.0034603179
+                    "ci_lower":0.0022415453,
+                    "ci_upper":0.0025556833
                 }
             },
             {
                 "study_id":"Muthukumar2013",
                 "fixed_effect":{
-                    "coef":-0.0025344174,
+                    "coef":-0.0000245449,
                     "weight":1.6929,
-                    "ci_lower":-0.008494871,
-                    "ci_upper":0.0034260363
+                    "ci_lower":-0.0084496204,
+                    "ci_upper":0.0084005307
                 },
                 "random_effect":{
-                    "coef":0.0007947147,
+                    "coef":0.0023986143,
                     "weight":1.6929,
-                    "ci_lower":-0.0018708885,
-                    "ci_upper":0.0034603179
+                    "ci_lower":0.0022415453,
+                    "ci_upper":0.0025556833
                 }
             },
             {
                 "study_id":"Roland2008",
                 "fixed_effect":{
-                    "coef":-0.0025344174,
+                    "coef":-0.0000245449,
                     "weight":2.5398,
-                    "ci_lower":-0.008494871,
-                    "ci_upper":0.0034260363
+                    "ci_lower":-0.0084496204,
+                    "ci_upper":0.0084005307
                 },
                 "random_effect":{
-                    "coef":0.0007947147,
+                    "coef":0.0023986143,
                     "weight":2.5398,
-                    "ci_lower":-0.0018708885,
-                    "ci_upper":0.0034603179
+                    "ci_lower":0.0022415453,
+                    "ci_upper":0.0025556833
                 }
             },
             {
                 "study_id":"Stock2010",
                 "fixed_effect":{
-                    "coef":-0.0025344174,
+                    "coef":-0.0000245449,
                     "weight":29.07465,
-                    "ci_lower":-0.008494871,
-                    "ci_upper":0.0034260363
+                    "ci_lower":-0.0084496204,
+                    "ci_upper":0.0084005307
                 },
                 "random_effect":{
-                    "coef":0.0007947147,
+                    "coef":0.0023986143,
                     "weight":29.07465,
-                    "ci_lower":-0.0018708885,
-                    "ci_upper":0.0034603179
+                    "ci_lower":0.0022415453,
+                    "ci_upper":0.0025556833
                 }
             }
         ],
         "fixed_effects":{
             "coef":[
-                2.0272862182,
-                -0.0025344174
+                1.0506071119,
+                -0.0000245449
             ],
             "pvalues":[
-                0.1780598979,
-                0.4261815615
+                0.6067920978,
+                0.9955563375
             ],
-            "rsquared":0.0716443062,
-            "aic":27.3801239304,
-            "bic":28.175914476
+            "rsquared":0.0000032605,
+            "aic":38.1537680489,
+            "bic":39.1235813485
         },
         "random_effects":{
             "coef":[
-                1.0954132704,
-                0.0007947147,
+                0.5128950976,
+                0.0023986143,
                 1.0
             ],
             "pvalues":[
-                0.0036811442,
-                0.5589859557,
+                0.0640383859,
+                7.698861722e-197,
                 null
             ],
-            "group_variance":0.2927220633,
-            "log_likelihood":-16.9954701795
+            "group_variance":0.3511434929,
+            "log_likelihood":-19.1402298085
         }
     },
     {
@@ -1359,6 +1423,7 @@
         "variable":"atg",
         "studies involved":[
             "Azar2017",
+            "Durand2024",
             "Locke2015",
             "Matignon2019",
             "Mazuecos2011",
@@ -1373,180 +1438,195 @@
             {
                 "study_id":"Azar2017",
                 "fixed_effect":{
-                    "coef":0.5336096555,
+                    "coef":1.3116488236,
                     "weight":0.5640495868,
-                    "ci_lower":-0.8715169195,
-                    "ci_upper":1.9387362305
+                    "ci_lower":-0.2547962171,
+                    "ci_upper":2.8780938644
                 },
                 "random_effect":{
-                    "coef":0.4645012196,
+                    "coef":0.7468232239,
                     "weight":0.5640495868,
-                    "ci_lower":-0.7677202244,
-                    "ci_upper":1.6967226636
+                    "ci_lower":-0.2347397882,
+                    "ci_upper":1.7283862361
+                }
+            },
+            {
+                "study_id":"Durand2024",
+                "fixed_effect":{
+                    "coef":1.3116488236,
+                    "weight":9.4949494949,
+                    "ci_lower":-0.2547962171,
+                    "ci_upper":2.8780938644
+                },
+                "random_effect":{
+                    "coef":0.7468232239,
+                    "weight":9.4949494949,
+                    "ci_lower":-0.2347397882,
+                    "ci_upper":1.7283862361
                 }
             },
             {
                 "study_id":"Locke2015",
                 "fixed_effect":{
-                    "coef":0.5336096555,
+                    "coef":1.3116488236,
                     "weight":86.462229,
-                    "ci_lower":-0.8715169195,
-                    "ci_upper":1.9387362305
+                    "ci_lower":-0.2547962171,
+                    "ci_upper":2.8780938644
                 },
                 "random_effect":{
-                    "coef":0.4645012196,
+                    "coef":0.7468232239,
                     "weight":86.462229,
-                    "ci_lower":-0.7677202244,
-                    "ci_upper":1.6967226636
+                    "ci_lower":-0.2347397882,
+                    "ci_upper":1.7283862361
                 }
             },
             {
                 "study_id":"Matignon2019",
                 "fixed_effect":{
-                    "coef":0.5336096555,
+                    "coef":1.3116488236,
                     "weight":9.0036,
-                    "ci_lower":-0.8715169195,
-                    "ci_upper":1.9387362305
+                    "ci_lower":-0.2547962171,
+                    "ci_upper":2.8780938644
                 },
                 "random_effect":{
-                    "coef":0.4645012196,
+                    "coef":0.7468232239,
                     "weight":9.0036,
-                    "ci_lower":-0.7677202244,
-                    "ci_upper":1.6967226636
+                    "ci_lower":-0.2347397882,
+                    "ci_upper":1.7283862361
                 }
             },
             {
                 "study_id":"Mazuecos2011",
                 "fixed_effect":{
-                    "coef":0.5336096555,
+                    "coef":1.3116488236,
                     "weight":3.80928,
-                    "ci_lower":-0.8715169195,
-                    "ci_upper":1.9387362305
+                    "ci_lower":-0.2547962171,
+                    "ci_upper":2.8780938644
                 },
                 "random_effect":{
-                    "coef":0.4645012196,
+                    "coef":0.7468232239,
                     "weight":3.80928,
-                    "ci_lower":-0.7677202244,
-                    "ci_upper":1.6967226636
+                    "ci_lower":-0.2347397882,
+                    "ci_upper":1.7283862361
                 }
             },
             {
                 "study_id":"Mazuecos2013",
                 "fixed_effect":{
-                    "coef":0.5336096555,
+                    "coef":1.3116488236,
                     "weight":4.282416,
-                    "ci_lower":-0.8715169195,
-                    "ci_upper":1.9387362305
+                    "ci_lower":-0.2547962171,
+                    "ci_upper":2.8780938644
                 },
                 "random_effect":{
-                    "coef":0.4645012196,
+                    "coef":0.7468232239,
                     "weight":4.282416,
-                    "ci_lower":-0.7677202244,
-                    "ci_upper":1.6967226636
+                    "ci_lower":-0.2347397882,
+                    "ci_upper":1.7283862361
                 }
             },
             {
                 "study_id":"Muller2015",
                 "fixed_effect":{
-                    "coef":0.5336096555,
+                    "coef":1.3116488236,
                     "weight":3.6288,
-                    "ci_lower":-0.8715169195,
-                    "ci_upper":1.9387362305
+                    "ci_lower":-0.2547962171,
+                    "ci_upper":2.8780938644
                 },
                 "random_effect":{
-                    "coef":0.4645012196,
+                    "coef":0.7468232239,
                     "weight":3.6288,
-                    "ci_lower":-0.7677202244,
-                    "ci_upper":1.6967226636
+                    "ci_lower":-0.2347397882,
+                    "ci_upper":1.7283862361
                 }
             },
             {
                 "study_id":"Muthukumar2013",
                 "fixed_effect":{
-                    "coef":0.5336096555,
+                    "coef":1.3116488236,
                     "weight":1.6929,
-                    "ci_lower":-0.8715169195,
-                    "ci_upper":1.9387362305
+                    "ci_lower":-0.2547962171,
+                    "ci_upper":2.8780938644
                 },
                 "random_effect":{
-                    "coef":0.4645012196,
+                    "coef":0.7468232239,
                     "weight":1.6929,
-                    "ci_lower":-0.7677202244,
-                    "ci_upper":1.6967226636
+                    "ci_lower":-0.2347397882,
+                    "ci_upper":1.7283862361
                 }
             },
             {
                 "study_id":"Sawinski2015",
                 "fixed_effect":{
-                    "coef":0.5336096555,
+                    "coef":1.3116488236,
                     "weight":98.3421,
-                    "ci_lower":-0.8715169195,
-                    "ci_upper":1.9387362305
+                    "ci_lower":-0.2547962171,
+                    "ci_upper":2.8780938644
                 },
                 "random_effect":{
-                    "coef":0.4645012196,
+                    "coef":0.7468232239,
                     "weight":98.3421,
-                    "ci_lower":-0.7677202244,
-                    "ci_upper":1.6967226636
+                    "ci_lower":-0.2347397882,
+                    "ci_upper":1.7283862361
                 }
             },
             {
                 "study_id":"Sawinski2017",
                 "fixed_effect":{
-                    "coef":0.5336096555,
+                    "coef":1.3116488236,
                     "weight":37.303188,
-                    "ci_lower":-0.8715169195,
-                    "ci_upper":1.9387362305
+                    "ci_lower":-0.2547962171,
+                    "ci_upper":2.8780938644
                 },
                 "random_effect":{
-                    "coef":0.4645012196,
+                    "coef":0.7468232239,
                     "weight":37.303188,
-                    "ci_lower":-0.7677202244,
-                    "ci_upper":1.6967226636
+                    "ci_lower":-0.2347397882,
+                    "ci_upper":1.7283862361
                 }
             },
             {
                 "study_id":"Stock2010",
                 "fixed_effect":{
-                    "coef":0.5336096555,
+                    "coef":1.3116488236,
                     "weight":29.07465,
-                    "ci_lower":-0.8715169195,
-                    "ci_upper":1.9387362305
+                    "ci_lower":-0.2547962171,
+                    "ci_upper":2.8780938644
                 },
                 "random_effect":{
-                    "coef":0.4645012196,
+                    "coef":0.7468232239,
                     "weight":29.07465,
-                    "ci_lower":-0.7677202244,
-                    "ci_upper":1.6967226636
+                    "ci_lower":-0.2347397882,
+                    "ci_upper":1.7283862361
                 }
             }
         ],
         "fixed_effects":{
             "coef":[
-                1.2609662245,
-                0.5336096555
+                1.0747693209,
+                1.3116488236
             ],
             "pvalues":[
-                0.0004869211,
-                0.4779694903
+                0.002641877,
+                0.1351764623
             ],
-            "rsquared":0.0647676501,
-            "aic":15.8427428713,
-            "bic":16.4479130573
+            "rsquared":0.2303416374,
+            "aic":22.069106039,
+            "bic":22.8648965846
         },
         "random_effects":{
             "coef":[
-                1.4439236476,
-                0.4645012196,
+                1.4392036949,
+                0.7468232239,
                 1.0
             ],
             "pvalues":[
-                0.0000020721,
-                0.4600002666,
+                5.789551831e-117,
+                0.1358911445,
                 null
             ],
-            "group_variance":0.1766893234,
-            "log_likelihood":-8.2859585492
+            "group_variance":0.22546508,
+            "log_likelihood":-10.3592283879
         }
     },
     {
@@ -1555,6 +1635,7 @@
             "Alfano2018",
             "Azar2017",
             "Boyle2017",
+            "Durand2024",
             "Gathogo2014",
             "Mazuecos2011",
             "Mazuecos2013",
@@ -1566,165 +1647,180 @@
             {
                 "study_id":"Alfano2018",
                 "fixed_effect":{
-                    "coef":-1.299579067,
+                    "coef":-1.9653440923,
                     "weight":3.354621,
-                    "ci_lower":-2.3171069136,
-                    "ci_upper":-0.2820512204
+                    "ci_lower":-3.3833874344,
+                    "ci_upper":-0.5473007502
                 },
                 "random_effect":{
-                    "coef":-0.9890543673,
+                    "coef":-1.2661825813,
                     "weight":3.354621,
-                    "ci_lower":-1.4810825872,
-                    "ci_upper":-0.4970261475
+                    "ci_lower":-1.2661825813,
+                    "ci_upper":-1.2661825813
                 }
             },
             {
                 "study_id":"Azar2017",
                 "fixed_effect":{
-                    "coef":-1.299579067,
+                    "coef":-1.9653440923,
                     "weight":0.5640495868,
-                    "ci_lower":-2.3171069136,
-                    "ci_upper":-0.2820512204
+                    "ci_lower":-3.3833874344,
+                    "ci_upper":-0.5473007502
                 },
                 "random_effect":{
-                    "coef":-0.9890543673,
+                    "coef":-1.2661825813,
                     "weight":0.5640495868,
-                    "ci_lower":-1.4810825872,
-                    "ci_upper":-0.4970261475
+                    "ci_lower":-1.2661825813,
+                    "ci_upper":-1.2661825813
                 }
             },
             {
                 "study_id":"Boyle2017",
                 "fixed_effect":{
-                    "coef":-1.299579067,
+                    "coef":-1.9653440923,
                     "weight":25.38498456,
-                    "ci_lower":-2.3171069136,
-                    "ci_upper":-0.2820512204
+                    "ci_lower":-3.3833874344,
+                    "ci_upper":-0.5473007502
                 },
                 "random_effect":{
-                    "coef":-0.9890543673,
+                    "coef":-1.2661825813,
                     "weight":25.38498456,
-                    "ci_lower":-1.4810825872,
-                    "ci_upper":-0.4970261475
+                    "ci_lower":-1.2661825813,
+                    "ci_upper":-1.2661825813
+                }
+            },
+            {
+                "study_id":"Durand2024",
+                "fixed_effect":{
+                    "coef":-1.9653440923,
+                    "weight":9.4949494949,
+                    "ci_lower":-3.3833874344,
+                    "ci_upper":-0.5473007502
+                },
+                "random_effect":{
+                    "coef":-1.2661825813,
+                    "weight":9.4949494949,
+                    "ci_lower":-1.2661825813,
+                    "ci_upper":-1.2661825813
                 }
             },
             {
                 "study_id":"Gathogo2014",
                 "fixed_effect":{
-                    "coef":-1.299579067,
+                    "coef":-1.9653440923,
                     "weight":4.535685,
-                    "ci_lower":-2.3171069136,
-                    "ci_upper":-0.2820512204
+                    "ci_lower":-3.3833874344,
+                    "ci_upper":-0.5473007502
                 },
                 "random_effect":{
-                    "coef":-0.9890543673,
+                    "coef":-1.2661825813,
                     "weight":4.535685,
-                    "ci_lower":-1.4810825872,
-                    "ci_upper":-0.4970261475
+                    "ci_lower":-1.2661825813,
+                    "ci_upper":-1.2661825813
                 }
             },
             {
                 "study_id":"Mazuecos2011",
                 "fixed_effect":{
-                    "coef":-1.299579067,
+                    "coef":-1.9653440923,
                     "weight":3.80928,
-                    "ci_lower":-2.3171069136,
-                    "ci_upper":-0.2820512204
+                    "ci_lower":-3.3833874344,
+                    "ci_upper":-0.5473007502
                 },
                 "random_effect":{
-                    "coef":-0.9890543673,
+                    "coef":-1.2661825813,
                     "weight":3.80928,
-                    "ci_lower":-1.4810825872,
-                    "ci_upper":-0.4970261475
+                    "ci_lower":-1.2661825813,
+                    "ci_upper":-1.2661825813
                 }
             },
             {
                 "study_id":"Mazuecos2013",
                 "fixed_effect":{
-                    "coef":-1.299579067,
+                    "coef":-1.9653440923,
                     "weight":4.282416,
-                    "ci_lower":-2.3171069136,
-                    "ci_upper":-0.2820512204
+                    "ci_lower":-3.3833874344,
+                    "ci_upper":-0.5473007502
                 },
                 "random_effect":{
-                    "coef":-0.9890543673,
+                    "coef":-1.2661825813,
                     "weight":4.282416,
-                    "ci_lower":-1.4810825872,
-                    "ci_upper":-0.4970261475
+                    "ci_lower":-1.2661825813,
+                    "ci_upper":-1.2661825813
                 }
             },
             {
                 "study_id":"Muthukumar2013",
                 "fixed_effect":{
-                    "coef":-1.299579067,
+                    "coef":-1.9653440923,
                     "weight":1.6929,
-                    "ci_lower":-2.3171069136,
-                    "ci_upper":-0.2820512204
+                    "ci_lower":-3.3833874344,
+                    "ci_upper":-0.5473007502
                 },
                 "random_effect":{
-                    "coef":-0.9890543673,
+                    "coef":-1.2661825813,
                     "weight":1.6929,
-                    "ci_lower":-1.4810825872,
-                    "ci_upper":-0.4970261475
+                    "ci_lower":-1.2661825813,
+                    "ci_upper":-1.2661825813
                 }
             },
             {
                 "study_id":"Roland2008",
                 "fixed_effect":{
-                    "coef":-1.299579067,
+                    "coef":-1.9653440923,
                     "weight":2.5398,
-                    "ci_lower":-2.3171069136,
-                    "ci_upper":-0.2820512204
+                    "ci_lower":-3.3833874344,
+                    "ci_upper":-0.5473007502
                 },
                 "random_effect":{
-                    "coef":-0.9890543673,
+                    "coef":-1.2661825813,
                     "weight":2.5398,
-                    "ci_lower":-1.4810825872,
-                    "ci_upper":-0.4970261475
+                    "ci_lower":-1.2661825813,
+                    "ci_upper":-1.2661825813
                 }
             },
             {
                 "study_id":"Stock2010",
                 "fixed_effect":{
-                    "coef":-1.299579067,
+                    "coef":-1.9653440923,
                     "weight":29.07465,
-                    "ci_lower":-2.3171069136,
-                    "ci_upper":-0.2820512204
+                    "ci_lower":-3.3833874344,
+                    "ci_upper":-0.5473007502
                 },
                 "random_effect":{
-                    "coef":-0.9890543673,
+                    "coef":-1.2661825813,
                     "weight":29.07465,
-                    "ci_lower":-1.4810825872,
-                    "ci_upper":-0.4970261475
+                    "ci_lower":-1.2661825813,
+                    "ci_upper":-1.2661825813
                 }
             }
         ],
         "fixed_effects":{
             "coef":[
-                1.8138395897,
-                -1.299579067
+                2.4171155376,
+                -1.9653440923
             ],
             "pvalues":[
-                0.0020969335,
-                0.0407949211
+                0.0014422658,
+                0.0263924239
             ],
-            "rsquared":0.4723551268,
-            "aic":18.2853267735,
-            "bic":18.6797759282
+            "rsquared":0.4798174969,
+            "aic":27.573184392,
+            "bic":28.178354578
         },
         "random_effects":{
             "coef":[
-                2.012836906,
-                -0.9890543673,
+                2.2842614606,
+                -1.2661825813,
                 1.0
             ],
             "pvalues":[
-                0.0000000384,
-                0.0000815124,
+                6.866037251e-20,
+                0.0,
                 null
             ],
-            "group_variance":0.2610207423,
-            "log_likelihood":-8.6521877683
+            "group_variance":0.3129999483,
+            "log_likelihood":-10.5488039183
         }
     },
     {
@@ -1959,6 +2055,7 @@
             "Alfano2018",
             "Azar2017",
             "Boyle2017",
+            "Durand2024",
             "Malat2018",
             "Mazuecos2012",
             "Muthukumar2013",
@@ -1969,150 +2066,165 @@
             {
                 "study_id":"Alfano2018",
                 "fixed_effect":{
-                    "coef":0.3951407444,
+                    "coef":1.9276411305,
                     "weight":3.354621,
-                    "ci_lower":-6.2245297197,
-                    "ci_upper":7.0148112084
+                    "ci_lower":-0.1168500975,
+                    "ci_upper":3.9721323585
                 },
                 "random_effect":{
-                    "coef":1.0217492868,
+                    "coef":1.4415606442,
                     "weight":3.354621,
-                    "ci_lower":-0.1162913373,
-                    "ci_upper":2.1597899108
+                    "ci_lower":0.4393948161,
+                    "ci_upper":2.4437264722
                 }
             },
             {
                 "study_id":"Azar2017",
                 "fixed_effect":{
-                    "coef":0.3951407444,
+                    "coef":1.9276411305,
                     "weight":0.6175,
-                    "ci_lower":-6.2245297197,
-                    "ci_upper":7.0148112084
+                    "ci_lower":-0.1168500975,
+                    "ci_upper":3.9721323585
                 },
                 "random_effect":{
-                    "coef":1.0217492868,
+                    "coef":1.4415606442,
                     "weight":0.6175,
-                    "ci_lower":-0.1162913373,
-                    "ci_upper":2.1597899108
+                    "ci_lower":0.4393948161,
+                    "ci_upper":2.4437264722
                 }
             },
             {
                 "study_id":"Boyle2017",
                 "fixed_effect":{
-                    "coef":0.3951407444,
+                    "coef":1.9276411305,
                     "weight":25.38498456,
-                    "ci_lower":-6.2245297197,
-                    "ci_upper":7.0148112084
+                    "ci_lower":-0.1168500975,
+                    "ci_upper":3.9721323585
                 },
                 "random_effect":{
-                    "coef":1.0217492868,
+                    "coef":1.4415606442,
                     "weight":25.38498456,
-                    "ci_lower":-0.1162913373,
-                    "ci_upper":2.1597899108
+                    "ci_lower":0.4393948161,
+                    "ci_upper":2.4437264722
+                }
+            },
+            {
+                "study_id":"Durand2024",
+                "fixed_effect":{
+                    "coef":1.9276411305,
+                    "weight":9.4949494949,
+                    "ci_lower":-0.1168500975,
+                    "ci_upper":3.9721323585
+                },
+                "random_effect":{
+                    "coef":1.4415606442,
+                    "weight":9.4949494949,
+                    "ci_lower":0.4393948161,
+                    "ci_upper":2.4437264722
                 }
             },
             {
                 "study_id":"Malat2018",
                 "fixed_effect":{
-                    "coef":0.3951407444,
+                    "coef":1.9276411305,
                     "weight":28.3657332,
-                    "ci_lower":-6.2245297197,
-                    "ci_upper":7.0148112084
+                    "ci_lower":-0.1168500975,
+                    "ci_upper":3.9721323585
                 },
                 "random_effect":{
-                    "coef":1.0217492868,
+                    "coef":1.4415606442,
                     "weight":28.3657332,
-                    "ci_lower":-0.1162913373,
-                    "ci_upper":2.1597899108
+                    "ci_lower":0.4393948161,
+                    "ci_upper":2.4437264722
                 }
             },
             {
                 "study_id":"Mazuecos2012",
                 "fixed_effect":{
-                    "coef":0.3951407444,
+                    "coef":1.9276411305,
                     "weight":0.475,
-                    "ci_lower":-6.2245297197,
-                    "ci_upper":7.0148112084
+                    "ci_lower":-0.1168500975,
+                    "ci_upper":3.9721323585
                 },
                 "random_effect":{
-                    "coef":1.0217492868,
+                    "coef":1.4415606442,
                     "weight":0.475,
-                    "ci_lower":-0.1162913373,
-                    "ci_upper":2.1597899108
+                    "ci_lower":0.4393948161,
+                    "ci_upper":2.4437264722
                 }
             },
             {
                 "study_id":"Muthukumar2013",
                 "fixed_effect":{
-                    "coef":0.3951407444,
+                    "coef":1.9276411305,
                     "weight":1.6929,
-                    "ci_lower":-6.2245297197,
-                    "ci_upper":7.0148112084
+                    "ci_lower":-0.1168500975,
+                    "ci_upper":3.9721323585
                 },
                 "random_effect":{
-                    "coef":1.0217492868,
+                    "coef":1.4415606442,
                     "weight":1.6929,
-                    "ci_lower":-0.1162913373,
-                    "ci_upper":2.1597899108
+                    "ci_lower":0.4393948161,
+                    "ci_upper":2.4437264722
                 }
             },
             {
                 "study_id":"Roland2008",
                 "fixed_effect":{
-                    "coef":0.3951407444,
+                    "coef":1.9276411305,
                     "weight":2.5398,
-                    "ci_lower":-6.2245297197,
-                    "ci_upper":7.0148112084
+                    "ci_lower":-0.1168500975,
+                    "ci_upper":3.9721323585
                 },
                 "random_effect":{
-                    "coef":1.0217492868,
+                    "coef":1.4415606442,
                     "weight":2.5398,
-                    "ci_lower":-0.1162913373,
-                    "ci_upper":2.1597899108
+                    "ci_lower":0.4393948161,
+                    "ci_upper":2.4437264722
                 }
             },
             {
                 "study_id":"Sawinski2017",
                 "fixed_effect":{
-                    "coef":0.3951407444,
+                    "coef":1.9276411305,
                     "weight":37.303188,
-                    "ci_lower":-6.2245297197,
-                    "ci_upper":7.0148112084
+                    "ci_lower":-0.1168500975,
+                    "ci_upper":3.9721323585
                 },
                 "random_effect":{
-                    "coef":1.0217492868,
+                    "coef":1.4415606442,
                     "weight":37.303188,
-                    "ci_lower":-0.1162913373,
-                    "ci_upper":2.1597899108
+                    "ci_lower":0.4393948161,
+                    "ci_upper":2.4437264722
                 }
             }
         ],
         "fixed_effects":{
             "coef":[
-                1.0308438148,
-                0.3951407444
+                0.9063684262,
+                1.9276411305
             ],
             "pvalues":[
-                0.0541958948,
-                0.9106811192
+                0.0271976384,
+                0.107084197
             ],
-            "rsquared":0.0022761566,
-            "aic":30.5855758754,
-            "bic":30.7444589588
+            "rsquared":0.3278941375,
+            "aic":32.3924890212,
+            "bic":32.7869381759
         },
         "random_effects":{
             "coef":[
-                1.412268135,
-                1.0217492868,
+                1.3550917668,
+                1.4415606442,
                 1.0
             ],
             "pvalues":[
-                0.0000000034,
-                0.0784559258,
+                3.251042716e-22,
+                0.0048120622,
                 null
             ],
-            "group_variance":0.5392669438,
-            "log_likelihood":-9.2188030948
+            "group_variance":0.4687470416,
+            "log_likelihood":-10.7389377979
         }
     },
     {
@@ -2283,6 +2395,7 @@
             "Alfano2018",
             "Azar2017",
             "Boyle2017",
+            "Durand2024",
             "Gathogo2014",
             "Malat2018",
             "Mazuecos2012",
@@ -2296,195 +2409,210 @@
             {
                 "study_id":"Alfano2018",
                 "fixed_effect":{
-                    "coef":-4.1547551619,
+                    "coef":-4.3806887561,
                     "weight":3.354621,
-                    "ci_lower":-5.8972854504,
-                    "ci_upper":-2.4122248735
+                    "ci_lower":-5.7269076508,
+                    "ci_upper":-3.0344698614
                 },
                 "random_effect":{
-                    "coef":-2.7991739445,
+                    "coef":-2.9963604681,
                     "weight":3.354621,
-                    "ci_lower":-3.5580687797,
-                    "ci_upper":-2.0402791093
+                    "ci_lower":-3.5835191623,
+                    "ci_upper":-2.4092017738
                 }
             },
             {
                 "study_id":"Azar2017",
                 "fixed_effect":{
-                    "coef":-4.1547551619,
+                    "coef":-4.3806887561,
                     "weight":0.6175,
-                    "ci_lower":-5.8972854504,
-                    "ci_upper":-2.4122248735
+                    "ci_lower":-5.7269076508,
+                    "ci_upper":-3.0344698614
                 },
                 "random_effect":{
-                    "coef":-2.7991739445,
+                    "coef":-2.9963604681,
                     "weight":0.6175,
-                    "ci_lower":-3.5580687797,
-                    "ci_upper":-2.0402791093
+                    "ci_lower":-3.5835191623,
+                    "ci_upper":-2.4092017738
                 }
             },
             {
                 "study_id":"Boyle2017",
                 "fixed_effect":{
-                    "coef":-4.1547551619,
+                    "coef":-4.3806887561,
                     "weight":25.38498456,
-                    "ci_lower":-5.8972854504,
-                    "ci_upper":-2.4122248735
+                    "ci_lower":-5.7269076508,
+                    "ci_upper":-3.0344698614
                 },
                 "random_effect":{
-                    "coef":-2.7991739445,
+                    "coef":-2.9963604681,
                     "weight":25.38498456,
-                    "ci_lower":-3.5580687797,
-                    "ci_upper":-2.0402791093
+                    "ci_lower":-3.5835191623,
+                    "ci_upper":-2.4092017738
+                }
+            },
+            {
+                "study_id":"Durand2024",
+                "fixed_effect":{
+                    "coef":-4.3806887561,
+                    "weight":9.4949494949,
+                    "ci_lower":-5.7269076508,
+                    "ci_upper":-3.0344698614
+                },
+                "random_effect":{
+                    "coef":-2.9963604681,
+                    "weight":9.4949494949,
+                    "ci_lower":-3.5835191623,
+                    "ci_upper":-2.4092017738
                 }
             },
             {
                 "study_id":"Gathogo2014",
                 "fixed_effect":{
-                    "coef":-4.1547551619,
+                    "coef":-4.3806887561,
                     "weight":4.535685,
-                    "ci_lower":-5.8972854504,
-                    "ci_upper":-2.4122248735
+                    "ci_lower":-5.7269076508,
+                    "ci_upper":-3.0344698614
                 },
                 "random_effect":{
-                    "coef":-2.7991739445,
+                    "coef":-2.9963604681,
                     "weight":4.535685,
-                    "ci_lower":-3.5580687797,
-                    "ci_upper":-2.0402791093
+                    "ci_lower":-3.5835191623,
+                    "ci_upper":-2.4092017738
                 }
             },
             {
                 "study_id":"Malat2018",
                 "fixed_effect":{
-                    "coef":-4.1547551619,
+                    "coef":-4.3806887561,
                     "weight":28.3657332,
-                    "ci_lower":-5.8972854504,
-                    "ci_upper":-2.4122248735
+                    "ci_lower":-5.7269076508,
+                    "ci_upper":-3.0344698614
                 },
                 "random_effect":{
-                    "coef":-2.7991739445,
+                    "coef":-2.9963604681,
                     "weight":28.3657332,
-                    "ci_lower":-3.5580687797,
-                    "ci_upper":-2.0402791093
+                    "ci_lower":-3.5835191623,
+                    "ci_upper":-2.4092017738
                 }
             },
             {
                 "study_id":"Mazuecos2012",
                 "fixed_effect":{
-                    "coef":-4.1547551619,
+                    "coef":-4.3806887561,
                     "weight":0.475,
-                    "ci_lower":-5.8972854504,
-                    "ci_upper":-2.4122248735
+                    "ci_lower":-5.7269076508,
+                    "ci_upper":-3.0344698614
                 },
                 "random_effect":{
-                    "coef":-2.7991739445,
+                    "coef":-2.9963604681,
                     "weight":0.475,
-                    "ci_lower":-3.5580687797,
-                    "ci_upper":-2.0402791093
+                    "ci_lower":-3.5835191623,
+                    "ci_upper":-2.4092017738
                 }
             },
             {
                 "study_id":"Muller2015",
                 "fixed_effect":{
-                    "coef":-4.1547551619,
+                    "coef":-4.3806887561,
                     "weight":3.6288,
-                    "ci_lower":-5.8972854504,
-                    "ci_upper":-2.4122248735
+                    "ci_lower":-5.7269076508,
+                    "ci_upper":-3.0344698614
                 },
                 "random_effect":{
-                    "coef":-2.7991739445,
+                    "coef":-2.9963604681,
                     "weight":3.6288,
-                    "ci_lower":-3.5580687797,
-                    "ci_upper":-2.0402791093
+                    "ci_lower":-3.5835191623,
+                    "ci_upper":-2.4092017738
                 }
             },
             {
                 "study_id":"Muthukumar2013",
                 "fixed_effect":{
-                    "coef":-4.1547551619,
+                    "coef":-4.3806887561,
                     "weight":1.6929,
-                    "ci_lower":-5.8972854504,
-                    "ci_upper":-2.4122248735
+                    "ci_lower":-5.7269076508,
+                    "ci_upper":-3.0344698614
                 },
                 "random_effect":{
-                    "coef":-2.7991739445,
+                    "coef":-2.9963604681,
                     "weight":1.6929,
-                    "ci_lower":-3.5580687797,
-                    "ci_upper":-2.0402791093
+                    "ci_lower":-3.5835191623,
+                    "ci_upper":-2.4092017738
                 }
             },
             {
                 "study_id":"Roland2008",
                 "fixed_effect":{
-                    "coef":-4.1547551619,
+                    "coef":-4.3806887561,
                     "weight":2.5398,
-                    "ci_lower":-5.8972854504,
-                    "ci_upper":-2.4122248735
+                    "ci_lower":-5.7269076508,
+                    "ci_upper":-3.0344698614
                 },
                 "random_effect":{
-                    "coef":-2.7991739445,
+                    "coef":-2.9963604681,
                     "weight":2.5398,
-                    "ci_lower":-3.5580687797,
-                    "ci_upper":-2.0402791093
+                    "ci_lower":-3.5835191623,
+                    "ci_upper":-2.4092017738
                 }
             },
             {
                 "study_id":"Sawinski2017",
                 "fixed_effect":{
-                    "coef":-4.1547551619,
+                    "coef":-4.3806887561,
                     "weight":37.303188,
-                    "ci_lower":-5.8972854504,
-                    "ci_upper":-2.4122248735
+                    "ci_lower":-5.7269076508,
+                    "ci_upper":-3.0344698614
                 },
                 "random_effect":{
-                    "coef":-2.7991739445,
+                    "coef":-2.9963604681,
                     "weight":37.303188,
-                    "ci_lower":-3.5580687797,
-                    "ci_upper":-2.0402791093
+                    "ci_lower":-3.5835191623,
+                    "ci_upper":-2.4092017738
                 }
             },
             {
                 "study_id":"Stock2010",
                 "fixed_effect":{
-                    "coef":-4.1547551619,
+                    "coef":-4.3806887561,
                     "weight":29.07465,
-                    "ci_lower":-5.8972854504,
-                    "ci_upper":-2.4122248735
+                    "ci_lower":-5.7269076508,
+                    "ci_upper":-3.0344698614
                 },
                 "random_effect":{
-                    "coef":-2.7991739445,
+                    "coef":-2.9963604681,
                     "weight":29.07465,
-                    "ci_lower":-3.5580687797,
-                    "ci_upper":-2.0402791093
+                    "ci_lower":-3.5835191623,
+                    "ci_upper":-2.4092017738
                 }
             }
         ],
         "fixed_effects":{
             "coef":[
-                2.9385901494,
-                -4.1547551619
+                3.0492014678,
+                -4.3806887561
             ],
             "pvalues":[
-                0.0000542816,
-                0.0011632
+                0.0000017268,
+                0.0000805683
             ],
-            "rsquared":0.7081663093,
-            "aic":22.3144248257,
-            "bic":23.1102153713
+            "rsquared":0.8026778994,
+            "aic":22.5471454687,
+            "bic":23.5169587683
         },
         "random_effects":{
             "coef":[
-                2.9165017724,
-                -2.7991739445,
+                3.0202425373,
+                -2.9963604681,
                 1.0
             ],
             "pvalues":[
                 0.0,
-                0.0,
+                1.490796269e-23,
                 null
             ],
-            "group_variance":0.3079987338,
-            "log_likelihood":-10.9932205774
+            "group_variance":0.2780891015,
+            "log_likelihood":-11.9966394005
         }
     },
     {

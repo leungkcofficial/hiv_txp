@@ -1,21 +1,29 @@
 {
-    "Pooled_Survival_Proportion": 0.8786201109308164,
+    "Pooled_Survival_Proportion": 0.8698525546799216,
     "95%_CI": [
-        0.8304865940396692,
-        0.9144932727199807
+        0.8347678453564916,
+        0.8983942852209807
     ],
     "I2": 0,
-    "Q": 0.4644420770697373,
-    "p_value_for_Q": 0.7927708710268253,
+    "Q": 0.7945572828112482,
+    "p_value_for_Q": 0.8507684118957661,
     "tau2": 0,
     "combined_results": [
+        {
+            "study_id": "Durand2024",
+            "sample_size": 198,
+            "effect_size": 0.86,
+            "ci_lb": 0.8043739886817384,
+            "ci_ub": 0.9017409870305675,
+            "weight_percent": 48.600546774499364
+        },
         {
             "study_id": "Matignon2019",
             "sample_size": 61,
             "effect_size": 0.8899999999999999,
             "ci_lb": 0.7839260728822668,
             "ci_ub": 0.9474887721842229,
-            "weight_percent": 23.68664252481943
+            "weight_percent": 12.174804745236107
         },
         {
             "study_id": "Muller2015",
@@ -23,7 +31,7 @@
             "effect_size": 0.84,
             "ci_lb": 0.6523363443814894,
             "ci_ub": 0.936263011099448,
-            "weight_percent": 14.393089032647024
+            "weight_percent": 7.397969065040072
         },
         {
             "study_id": "Stock2010",
@@ -31,14 +39,14 @@
             "effect_size": 0.882,
             "ci_lb": 0.8198669551931788,
             "ci_ub": 0.9246706997665743,
-            "weight_percent": 61.92026844253354
+            "weight_percent": 31.82667941522447
         },
         {
             "study_id": "Pooled Estimate",
-            "sample_size": 238,
-            "effect_size": 0.8786201109308164,
-            "ci_lb": 0.8304865940396692,
-            "ci_ub": 0.9144932727199807,
+            "sample_size": 436,
+            "effect_size": 0.8698525546799216,
+            "ci_lb": 0.8347678453564916,
+            "ci_ub": 0.8983942852209807,
             "weight_percent": 100.0
         }
     ]

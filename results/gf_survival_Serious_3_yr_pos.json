@@ -1,0 +1,55 @@
+{
+    "Pooled_Survival_Proportion": 0.843677266732959,
+    "95%_CI": [
+        0.5264797450881882,
+        0.9632323598100316
+    ],
+    "I2": 78.17643261876974,
+    "Q": 13.746606810856237,
+    "p_value_for_Q": 0.003271162347028289,
+    "tau2": 1.909875361858541,
+    "combined_results": [
+        {
+            "study_id": "Abbott2004",
+            "sample_size": 47,
+            "effect_size": 0.9499999999999998,
+            "ci_lb": 0.8365338424830754,
+            "ci_ub": 0.9860223164599101,
+            "weight_percent": 27.555004246401527
+        },
+        {
+            "study_id": "Delaney1992",
+            "sample_size": 17,
+            "effect_size": 0.5176,
+            "ci_lb": 0.2929912902812944,
+            "ci_ub": 0.7353149530810037,
+            "weight_percent": 30.28220008397365
+        },
+        {
+            "study_id": "Mazuecos2012",
+            "sample_size": 10,
+            "effect_size": 0.9499999999999998,
+            "ci_lb": 0.5251218481660807,
+            "ci_ub": 0.9969461871819594,
+            "weight_percent": 16.181083283213297
+        },
+        {
+            "study_id": "Muthukumar2013",
+            "sample_size": 11,
+            "effect_size": 0.81,
+            "ci_lb": 0.48590618137771535,
+            "ci_ub": 0.9505655965110613,
+            "weight_percent": 25.98171238641152
+        },
+        {
+            "study_id": "Pooled Estimate",
+            "sample_size": 85,
+            "effect_size": 0.843677266732959,
+            "ci_lb": 0.5264797450881882,
+            "ci_ub": 0.9632323598100316,
+            "weight_percent": 99.99999999999999
+        }
+    ],
+    "Z_value": 2.091530431741402,
+    "p_value_for_Z": 0.03648054140485857
+}

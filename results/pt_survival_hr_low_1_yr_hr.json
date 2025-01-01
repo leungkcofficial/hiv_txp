@@ -1,0 +1,79 @@
+{
+    "Pooled_Hazard_Ratio": 1.5127294211840276,
+    "95%_CI": [
+        0.8525051345128881,
+        2.6842657118109923
+    ],
+    "I2": 97.89369490490382,
+    "Q": 284.8590175264249,
+    "p_value_for_Q": 0.0,
+    "tau2": 0.5751979695010029,
+    "Z": 1.4146231613921143,
+    "p_value_for_Z": 0.15717901418276758,
+    "combined_results": [
+        {
+            "study_id": "Alfano2018",
+            "sample_size": 19.0,
+            "effect_size": 5.210142582184117,
+            "ci_lb": 3.323280455269374,
+            "ci_ub": 8.168310226013666,
+            "weight_percent": 13.63641698611335
+        },
+        {
+            "study_id": "Locke2009",
+            "sample_size": 100.0,
+            "effect_size": 1.2155549992171513,
+            "ci_lb": 0.9992010812807318,
+            "ci_ub": 1.4787553614612983,
+            "weight_percent": 14.629827793396972
+        },
+        {
+            "study_id": "Locke2014",
+            "sample_size": 516.0,
+            "effect_size": 0.5840376848111029,
+            "ci_lb": 0.5357573325169432,
+            "ci_ub": 0.6366688733443062,
+            "weight_percent": 14.834191943078745
+        },
+        {
+            "study_id": "Mazuecos2011",
+            "sample_size": 20.0,
+            "effect_size": 1.0,
+            "ci_lb": 0.6451520048030777,
+            "ci_ub": 1.5500223087816865,
+            "weight_percent": 13.693815297702292
+        },
+        {
+            "study_id": "Mazuecos2013",
+            "sample_size": 36.0,
+            "effect_size": 1.0,
+            "ci_lb": 0.721324144338942,
+            "ci_ub": 1.3863392870572087,
+            "weight_percent": 14.19849066481107
+        },
+        {
+            "study_id": "Vicari2016",
+            "sample_size": 53.0,
+            "effect_size": 3.553775025809682,
+            "ci_lb": 2.714977648360322,
+            "ci_ub": 4.65172040797313,
+            "weight_percent": 14.411440893832767
+        },
+        {
+            "study_id": "Vivanco2013",
+            "sample_size": 88.0,
+            "effect_size": 1.4809211308367014,
+            "ci_lb": 1.201688411956095,
+            "ci_ub": 1.8250383160379369,
+            "weight_percent": 14.595816421064809
+        },
+        {
+            "study_id": "Pooled Estimate",
+            "sample_size": 832.0,
+            "effect_size": 1.5127294211840276,
+            "ci_lb": 0.8525051345128881,
+            "ci_ub": 2.6842657118109923,
+            "weight_percent": 100.0
+        }
+    ]
+}

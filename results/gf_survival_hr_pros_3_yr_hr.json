@@ -8,6 +8,8 @@
     "Q": 0.0,
     "p_value_for_Q": NaN,
     "tau2": 0,
+    "Z": 5.884639117642371,
+    "p_value_for_Z": 3.989234720336299e-09,
     "combined_results": [
         {
             "study_id": "Stock2010",
