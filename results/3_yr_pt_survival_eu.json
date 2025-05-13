@@ -1,0 +1,65 @@
+{
+    "Full_Data": {
+        "Pooled_Survival_Proportion": 0.9175165997849225,
+        "95%_CI": [
+            0.873172796596513,
+            0.9472919581813949
+        ],
+        "I2": 0,
+        "Q": 1.8663058768704142,
+        "p_value_for_Q": 0.966867935708662,
+        "tau2": 0,
+        "Z": 9.84185472690824,
+        "p_value_for_Z": 0.0,
+        "combined_results": [
+            {
+                "study_id": "Mazuecos2011",
+                "sample_size": 20,
+                "effect_size": 0.9499999999999998,
+                "ci_lb": 0.7177891566240235,
+                "ci_ub": 0.9930037249896921,
+                "weight_percent": 4.056059358261495
+            },
+            {
+                "study_id": "Mazuecos2012",
+                "sample_size": 10,
+                "effect_size": 0.9499999999999998,
+                "ci_lb": 0.5251218481660807,
+                "ci_ub": 0.9969461871819594,
+                "weight_percent": 2.0280296791307477
+            },
+            {
+                "study_id": "Mazuecos2013",
+                "sample_size": 36,
+                "effect_size": 0.9167,
+                "ci_lb": 0.7713927677889747,
+                "ci_ub": 0.9728927109397448,
+                "weight_percent": 11.736954751177326
+            },
+            {
+                "study_id": "Qiu2006",
+                "sample_size": 38,
+                "effect_size": 0.8730000000000001,
+                "ci_lb": 0.7256880330788936,
+                "ci_ub": 0.9469817057771978,
+                "weight_percent": 17.987974284392394
+            },
+            {
+                "study_id": "Roland2016",
+                "sample_size": 150,
+                "effect_size": 0.887,
+                "ci_lb": 0.8256305163551664,
+                "ci_ub": 0.9286373376863998,
+                "weight_percent": 64.19098192703805
+            },
+            {
+                "study_id": "Pooled Estimate",
+                "sample_size": 254,
+                "effect_size": 0.8937872849810252,
+                "ci_lb": 0.8487758555413786,
+                "ci_ub": 0.9265604015833976,
+                "weight_percent": 100.00000000000001
+            }
+        ]
+    }
+}

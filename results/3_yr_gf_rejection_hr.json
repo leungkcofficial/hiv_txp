@@ -1,31 +1,73 @@
 {
-    "Pooled_Survival_Proportion": 0.7555272973462637,
-    "95%_CI": [
-        0.5449800812830071,
-        1.047417174755279
-    ],
-    "I2": 0,
-    "Q": 0.0,
-    "p_value_for_Q": NaN,
-    "tau2": 0,
-    "Z": -1.6820361985481926,
-    "p_value_for_Z": 0.0925618208126684,
-    "combined_results": [
-        {
-            "study_id": "Lorio2016",
-            "sample_size": 36,
-            "effect_size": 0.7555272973462637,
-            "ci_lb": 0.5449800812830071,
-            "ci_ub": 1.047417174755279,
-            "weight_percent": 100.0
-        },
-        {
-            "study_id": "Pooled Estimate",
-            "sample_size": 36,
-            "effect_size": 0.7555272973462637,
-            "ci_lb": 0.5449800812830071,
-            "ci_ub": 1.047417174755279,
-            "weight_percent": 100.0
-        }
-    ]
+    "Full_Data": {
+        "Pooled_Hazard_Ratio": 1.7019985182275101,
+        "95%_CI": [
+            1.227692624826606,
+            2.359547412331952
+        ],
+        "I2": 0,
+        "Q": 0.0,
+        "p_value_for_Q": NaN,
+        "tau2": 0,
+        "Z": 3.1908189572650207,
+        "p_value_for_Z": 0.001418701489739771,
+        "combined_results": [
+            {
+                "study_id": "Lorio2016",
+                "sample_size": 36,
+                "effect_size": 1.7019985182275101,
+                "ci_lb": 1.227692624826606,
+                "ci_ub": 2.359547412331952,
+                "weight_percent": 100.0
+            },
+            {
+                "study_id": "Pooled Estimate",
+                "sample_size": 36,
+                "effect_size": 1.7019985182275101,
+                "ci_lb": 1.227692624826606,
+                "ci_ub": 2.359547412331952,
+                "weight_percent": 100.0
+            }
+        ]
+    },
+    "Best_Combination_Data": {
+        "Pooled_Hazard_Ratio": 1.7019985182275101,
+        "95%_CI": [
+            1.227692624826606,
+            2.359547412331952
+        ],
+        "I2": 0,
+        "Q": 0.0,
+        "p_value_for_Q": NaN,
+        "tau2": 0,
+        "Z": 3.1908189572650207,
+        "p_value_for_Z": 0.001418701489739771,
+        "combined_results": [
+            {
+                "study_id": "Lorio2016",
+                "sample_size": 36,
+                "effect_size": 1.7019985182275101,
+                "ci_lb": 1.227692624826606,
+                "ci_ub": 2.359547412331952,
+                "weight_percent": 100.0
+            },
+            {
+                "study_id": "Pooled Estimate",
+                "sample_size": 36,
+                "effect_size": 1.7019985182275101,
+                "ci_lb": 1.227692624826606,
+                "ci_ub": 2.359547412331952,
+                "weight_percent": 100.0
+            }
+        ],
+        "best_combination": [
+            "Lorio2016"
+        ]
+    },
+    "Study_Contributions": {
+        "Apewokin2018": 14.251274635469631,
+        "Mazuecos2011": 44.39264590288122,
+        "Mazuecos2013": 25.794354355484156,
+        "Vicari2016": 34.80562838058973
+    }
 }
